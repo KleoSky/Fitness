@@ -1,32 +1,78 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
+<body class="body" style="background-color: dimgray;">
+  <!-- <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
+    </svg> -->
+  <!-- примеры требуемых атрибутов data-test="*" -->
+  <div class="body__wrapper container">
+    <div class="body__hero hero" data-test="hero">
+      <header class="hero__header header">
+        <img src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Логотип сайта SUPERGYM">
+        <a class="header__link" href="tel:8-800-555-55-55">8 800 555-55-55</a>
+      </header>
+      <section class="hero__content">
+        <h1 class="hero__title">Фитнес центр</h1>
+        <p class="hero__location">Омск</p>
+        <ul class="hero__description-list">
+          <li class="hero__description-item">Тренажёрный</li>
+          <li class="hero__description-item">Групповые занятия</li>
+          <li class="hero__description-item">Кардио-зона</li>
+        </ul>
+        <button class="hero__button" type="button">Купить абонемент</button>
+      </section>
+      <picture>
+        <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
+          srcset="img/hero-img-desktop@1x.webp 1x, img/hero-img-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
+          srcset="img/hero-img-tablet@1x.webp 1x, img/hero-img-tablet@2x.webp 2x">
+        <source media="(min-width: 1440px)" width="500" height="524" type="image/jpeg"
+          srcset="img/hero-img-desktop@1x.jpg 1x, img/hero-img-desktop@2x.jpg 2x">
+        <img src="img/hero-img-tablet@1x.jpg" srcset="img/hero-img-tablet@2x.jpg 2x" width="324"
+          height="390" alt="Тренер фитнесс-зала">
+      </picture>
+    </div>
+    <main class="body__main main">
+      <div class="main__about about" data-test="about">
+        <h2 class="about__title">Тренажёрный зал</h2>
+        <h3 class="about__description">Просторный зал площадью 900 кв/м</h3>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
+          зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        <picture>
+          <source media="(min-width: 1366px)" width="600" height="600" type="image/webp"
+            srcset="images/slider-flat-desktop@1x.webp 1x, images/slider-flat-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="476" height="476" type="image/webp"
+            srcset="images/slider-flat-tablet@1x.webp 1x, images/slider-flat-tablet@2x.webp 2x">
+          <source width="280" height="280" type="image/webp"
+            srcset="images/slider-flat-mobile@1x.webp 1x, images/slider-flat-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" width="600" height="600" type="image/png"
+            srcset="images/slider-flat-desktop@1x.png 1x, images/slider-flat-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="476" height="476" type="image/png"
+            srcset="images/slider-flat-tablet@1x.png 1x, images/slider-flat-tablet@2x.png 2x">
+          <img src="images/slider-flat-mobile@1x.png" srcset="images/slider-flat-mobile@2x.png 2x" width="280"
+            height="280" alt="Кофе Декаф Флэт Уайт">
+        </picture>
+      </div>
+      <div data-test="price">price</div>
+      <div data-test="games">games</div>
+      <div data-test="juri">juri</div>
+      <div data-test="features">features</div>
+      <div data-test="offers">offers</div>
+      <div data-test="faq">faq</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="form">form</div>
+    </main>
     <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
