@@ -29,40 +29,153 @@
         </ul>
         <button class="hero__button" type="button">Купить абонемент</button>
       </section>
-      <picture>
-        <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
-          srcset="img/hero-img-desktop@1x.webp 1x, img/hero-img-desktop@2x.webp 2x">
-        <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
-          srcset="img/hero-img-tablet@1x.webp 1x, img/hero-img-tablet@2x.webp 2x">
-        <source media="(min-width: 1440px)" width="500" height="524" type="image/jpeg"
-          srcset="img/hero-img-desktop@1x.jpg 1x, img/hero-img-desktop@2x.jpg 2x">
-        <img src="img/hero-img-tablet@1x.jpg" srcset="img/hero-img-tablet@2x.jpg 2x" width="324"
-          height="390" alt="Тренер фитнесс-зала">
-      </picture>
+      <div class="hero__picture">
+        <picture>
+          <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
+            srcset="img/hero-img-desktop@1x.webp 1x, img/hero-img-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
+            srcset="img/hero-img-tablet@1x.webp 1x, img/hero-img-tablet@2x.webp 2x">
+          <source media="(min-width: 1440px)" width="500" height="524" type="image/jpeg"
+            srcset="img/hero-img-desktop@1x.jpg 1x, img/hero-img-desktop@2x.jpg 2x">
+          <img src="img/hero-img-tablet@1x.jpg" srcset="img/hero-img-tablet@2x.jpg 2x" width="324" height="390"
+            alt="Тренер фитнесс-зала">
+        </picture>
+      </div>
     </div>
     <main class="body__main main">
-      <div class="main__about about" data-test="about">
+      <section class="main__about about" data-test="about">
         <h2 class="about__title">Тренажёрный зал</h2>
         <h3 class="about__description">Просторный зал площадью 900 кв/м</h3>
         <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
           зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        <span>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
+          есть несколько оборудованных залов для различных видов групповых занятий.</span>
         <picture>
-          <source media="(min-width: 1366px)" width="600" height="600" type="image/webp"
-            srcset="images/slider-flat-desktop@1x.webp 1x, images/slider-flat-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" width="476" height="476" type="image/webp"
-            srcset="images/slider-flat-tablet@1x.webp 1x, images/slider-flat-tablet@2x.webp 2x">
-          <source width="280" height="280" type="image/webp"
-            srcset="images/slider-flat-mobile@1x.webp 1x, images/slider-flat-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" width="600" height="600" type="image/png"
-            srcset="images/slider-flat-desktop@1x.png 1x, images/slider-flat-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="476" height="476" type="image/png"
-            srcset="images/slider-flat-tablet@1x.png 1x, images/slider-flat-tablet@2x.png 2x">
-          <img src="images/slider-flat-mobile@1x.png" srcset="images/slider-flat-mobile@2x.png 2x" width="280"
-            height="280" alt="Кофе Декаф Флэт Уайт">
+          <source media="(min-width: 1366px)" width="660" height="400" type="image/webp"
+            srcset="img/main-img-desktop@1x.webp 1x, img/main-img-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
+            srcset="img/main-img-tablet@1x.webp 1x, img/main-img-tablet@2x.webp 2x">
+          <source width="320" height="280" type="image/webp"
+            srcset="img/main-img-mobile@1x.webp 1x, img/main-img-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" width="660" height="400" type="image/jpeg"
+            srcset="img/main-img-desktop@1x.jpg 1x, img/main-img-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
+            srcset="img/main-img-tablet@1x.jpg 1x, img/main-img-tablet@2x.jpg 2x">
+          <img src="img/main-img-mobile@1x.jpg" srcset="img/main-img-mobile@2x.jpg 2x" width="320" height="280"
+            alt="Просторный тренажёрный зал">
         </picture>
+        <div class="hero__video">
+          <iframe src="https://rutube.ru/video/0962cc6a02f003e300a237078ab7a229/" width="320" height="170"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Демонстрация обстановки тренажёрного зала">
+          </iframe>
+          <button class="hero__play-button" type="button">
+            <span class="visually-hidden">Запустить просмотр видео</span>
+          </button>
+        </div>
+      </section>
+      <section class="main__price price" data-test="price">
+        <h2 class="price__title">Абонементы</h2>
+        <div class="price__filter">
+          <ul class="price__filter-list">
+            <li class="price__filter-item price__filter-item--active">
+              <button class="price__filter-button">1 месяц</button>
+              <ul class="price__cards-list">
+                <li class="price__card card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__description">12 занятий</p>
+                  <p class="card__price">5000</p>
+                  <span class="card__price-transparent" aria-hidden="true">5000</span>
+                  <a class="card__link" href="#">Купить абонемент</a>
+                </li>
+                <li class="price__card card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__description">с 8:00 до 17:00</p>
+                  <p class="card__price">1700</p>
+                  <span class="card__price-transparent" aria-hidden="true">1700</span>
+                  <a class="card__link" href="#">Купить абонемент</a>
+                </li>
+                <li class="price__card card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__description">с 8:00 до 22:00</p>
+                  <p class="card__price">2700</p>
+                  <span class="card__price-transparent" aria-hidden="true">2700</span>
+                  <a class="card__link" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </li>
+            <li class="price__filter-item">
+              <button class="price__filter-button">6 месяцев</button>
+              <ul class="price__cards-list">
+                <li class="price__card card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__description">12 занятий</p>
+                  <p class="card__price">30000</p>
+                  <span class="card__price-transparent" aria-hidden="true">30000</span>
+                  <a class="card__link" href="#">Купить абонемент</a>
+                </li>
+                <li class="price__card card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__description">с 8:00 до 17:00</p>
+                  <p class="card__price">10200</p>
+                  <span class="card__price-transparent" aria-hidden="true">10200</span>
+                  <a class="card__link" href="#">Купить абонемент</a>
+                </li>
+                <li class="price__card card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__description">с 8:00 до 22:00</p>
+                  <p class="card__price">16200</p>
+                  <span class="card__price-transparent" aria-hidden="true">16200</span>
+                  <a class="card__link" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </li>
+            <li class="price__filter-item">
+              <button class="price__filter-button">12 месяцев</button>
+              <ul class="price__cards-list">
+                <li class="price__card card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__description">12 занятий</p>
+                  <p class="card__price">60000</p>
+                  <span class="card__price-transparent" aria-hidden="true">60000</span>
+                  <a class="card__link" href="#">Купить абонемент</a>
+                </li>
+                <li class="price__card card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__description">с 8:00 до 17:00</p>
+                  <p class="card__price">20400</p>
+                  <span class="card__price-transparent" aria-hidden="true">20400</span>
+                  <a class="card__link" href="#">Купить абонемент</a>
+                </li>
+                <li class="price__card card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__description">с 8:00 до 22:00</p>
+                  <p class="card__price">32400</p>
+                  <span class="card__price-transparent" aria-hidden="true">32400</span>
+                  <a class="card__link" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="main__games-wrapper">
+        <section class="main__games games" data-test="games">
+          <h2 class="games__title">Super Games</h2>
+          <div class="games__datetime">
+            <div class="games__date">
+              <span class="games__date-text">Дата</span>
+              <p class="games__date-number">7</p>
+              <span class="games__date-month">Марта</span>
+              <span class="games__date-year">2019</span>
+            </div>
+            <div class="games__time">
+              <span class="games__time-text">Дата</span>
+              <p class="games__time-number">7</p>
+            </div>
+          </div>
+        </section>
       </div>
-      <div data-test="price">price</div>
-      <div data-test="games">games</div>
       <div data-test="juri">juri</div>
       <div data-test="features">features</div>
       <div data-test="offers">offers</div>
