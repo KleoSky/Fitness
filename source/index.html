@@ -66,14 +66,27 @@
               alt="Просторный тренажёрный зал">
           </picture>
         </div>
-        <div class="hero__video">
-          <iframe src="https://vkvideo.ru/video-2000745319_83745319" width="320" height="170"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="Демонстрация обстановки тренажёрного зала">
-          </iframe>
+        <div class="about__video-wrapper">
+          <div class="about__video">
+            <picture>
+              <source media="(min-width: 1366px)" width="360" height="320" type="image/webp"
+                srcset="img/video-preview-desktop@1x.webp 1x, img/video-preview-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" width="270" height="170" type="image/webp"
+                srcset="img/video-preview-tablet@1x.webp 1x, img/video-preview-tablet@2x.webp 2x">
+              <source width="320" height="170" type="image/webp"
+                srcset="img/video-preview-mobile@1x.webp 1x, img/video-preview-mobile@2x.webp 2x">
+              <source media="(min-width: 1336px)" width="360" height="320" type="image/jpeg"
+                srcset="img/video-preview-desktop@1x.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="270" height="170" type="image/jpeg"
+                srcset="img/video-preview-tablet@1x.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
+              <img src="img/video-preview-mobile@1x.jpg" srcset="img/video-preview-mobile@2x.jpg 2x" width="320"
+                height="170" alt="Просторный тренажёрный зал">
+            </picture>
+          </div>
           <button class="hero__play-button" type="button">
             <span class="visually-hidden">Запустить просмотр видео</span>
           </button>
+          <div class="about__iframe-container"></div>
         </div>
       </section>
       <section class="main__price price" data-test="price">
@@ -669,10 +682,9 @@
               <h4 class="contacts__subtitle">Адрес:</h4>
               <address class="contacts__address-info">г. Омск, ул. 60 лет Октября, 7</address>
             </div>
-            <div class="contacts__chart">
+            <div class="contacts__schedule">
               <h4 class="contacts__subtitle">График работы:</h4>
-              <time class="contacts__chart-info" itemprop="openingHours"
-                datetime="ПН, ВТ, СР, ЧТ, ПТ, СБ, ВС 8:00-22:00">Пн-Вс: с 8:00 до 22:00</time>
+              <p class="contacts__schedule-info">Пн-Вс: с 8:00 до 22:00</p>
             </div>
             <div class="contacts__phone">
               <h4 class="contacts__subtitle">Телефон:</h4>
