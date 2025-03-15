@@ -4,22 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Supergym – самый большой фитнес центр за Уралом." />
   <title>SUPERGYM</title>
+  <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="sass/style.scss">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" sizes="32x32" href="public/32.png" type="image/png">
+  <link rel="icon" href="public/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="public/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="body" style="background-color: dimgray;">
   <!-- <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
   <div class="body__wrapper container">
-    <header class="hero__header header" data-test="hero">
+    <header class="body__header header" data-test="hero">
       <div class="header__main">
         <img src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Логотип сайта SUPERGYM">
         <a class="header__link" href="tel:8-800-555-55-55">8 800 555-55-55</a>
       </div>
-      <section class="hero__content">
+      <section class="header__hero hero">
         <h1 class="hero__title">Фитнес центр</h1>
         <p class="hero__location">Омск</p>
         <ul class="hero__description-list">
@@ -83,7 +89,7 @@
                 height="170" alt="Просторный тренажёрный зал">
             </picture>
           </div>
-          <button class="hero__play-button" type="button">
+          <button class="about__play-button" type="button">
             <span class="visually-hidden">Запустить просмотр видео</span>
           </button>
           <div class="about__iframe-container"></div>
@@ -182,41 +188,39 @@
           </ul>
         </div>
       </section>
-      <div class="main__games games">
-        <section class="main__games games" data-test="games">
-          <h2 class="games__title">Super Games</h2>
-          <div class="games__datetime">
-            <div class="games__date">
-              <span class="games__date-text">Дата</span>
-              <p class="games__date-number">7</p>
-              <span class="games__date-month">Марта</span>
-              <span class="games__date-year">2019</span>
-            </div>
-            <div class="games__time">
-              <span class="games__time-text">Время</span>
-              <p class="games__time-number">12:00</p>
-            </div>
+      <section class="main__games games" data-test="games">
+        <h2 class="games__title">Super Games</h2>
+        <div class="games__datetime">
+          <div class="games__date">
+            <span class="games__date-text">Дата</span>
+            <p class="games__date-number">7</p>
+            <span class="games__date-month">Марта</span>
+            <span class="games__date-year">2019</span>
           </div>
-          <p class="games__description">Ежегодные соревнования по CrossFit</p>
-          <a class="games__link" href="#">Заполнить заявку</a>
-          <div class="games__picture">
-            <picture>
-              <source media="(min-width: 1366px)" width="660" height="500" type="image/webp"
-                srcset="img/games-img-desktop@1x.webp 1x, img/games-img-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" width="378" height="348" type="image/webp"
-                srcset="img/games-img-tablet@1x.webp 1x, img/games-img-tablet@2x.webp 2x">
-              <source width="290" height="290" type="image/webp"
-                srcset="img/games-img-mobile@1x.webp 1x, img/games-img-mobile@2x.webp 2x">
-              <source media="(min-width: 1336px)" width="660" height="500" type="image/jpeg"
-                srcset="img/games-img-desktop@1x.jpg 1x, img/games-img-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" width="378" height="348" type="image/jpeg"
-                srcset="img/games-img-tablet@1x.jpg 1x, img/games-img-tablet@2x.jpg 2x">
-              <img src="img/games-img-mobile@1x.jpg" srcset="img/games-img-mobile@2x.jpg 2x" width="290" height="290"
-                alt="Мужчина во время тренировки">
-            </picture>
+          <div class="games__time">
+            <span class="games__time-text">Время</span>
+            <p class="games__time-number">12:00</p>
           </div>
-        </section>
-      </div>
+        </div>
+        <p class="games__description">Ежегодные соревнования по CrossFit</p>
+        <a class="games__link" href="#">Заполнить заявку</a>
+        <div class="games__picture">
+          <picture>
+            <source media="(min-width: 1366px)" width="660" height="500" type="image/webp"
+              srcset="img/games-img-desktop@1x.webp 1x, img/games-img-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="378" height="348" type="image/webp"
+              srcset="img/games-img-tablet@1x.webp 1x, img/games-img-tablet@2x.webp 2x">
+            <source width="290" height="290" type="image/webp"
+              srcset="img/games-img-mobile@1x.webp 1x, img/games-img-mobile@2x.webp 2x">
+            <source media="(min-width: 1336px)" width="660" height="500" type="image/jpeg"
+              srcset="img/games-img-desktop@1x.jpg 1x, img/games-img-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="378" height="348" type="image/jpeg"
+              srcset="img/games-img-tablet@1x.jpg 1x, img/games-img-tablet@2x.jpg 2x">
+            <img src="img/games-img-mobile@1x.jpg" srcset="img/games-img-mobile@2x.jpg 2x" width="290" height="290"
+              alt="Мужчина во время тренировки">
+          </picture>
+        </div>
+      </section>
       <section class="main__juri juri" data-test="juri">
         <h2 class="juri__title">Жюри</h2>
         <ul class="juri__list">
@@ -718,19 +722,19 @@
             <a class="nav__link" href="#">Расписание</a>
           </li>
         </ul>
-        <ul class="nav__social-list">
-          <li class="nav__social-item">
-            <a class="nav__social-link nav__social-link--vk" href="#">
+        <ul class="nav__social-list social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">VKontakte</span>
             </a>
           </li>
-          <li class="nav__social-item">
-            <a class="nav__social-link nav__social-link--ok" href="#">
+          <li class="social__item">
+            <a class="social__link social__link--ok" href="#">
               <span class="visually-hidden">Одноклассники</span>
             </a>
           </li>
-          <li class="nav__social-item">
-            <a class="nav__social-link nav__social-link--rd" href="#">
+          <li class="social__item">
+            <a class="social__link social__link--rd" href="#">
               <span class="visually-hidden">Reddit</span>
             </a>
           </li>
