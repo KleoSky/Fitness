@@ -1,0 +1,14 @@
+body {
+  font-family: var(--font-base, inherit);
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0;
+  width: 100%;
+  background-color: var(--bg-base, #000080);
+  color: var(--color-base, #000000);
+}
+
+img {
+  object-fit: contain;
+}
