@@ -2,7 +2,7 @@
   max-width: 290px;
   display: grid;
   grid-template-columns: repeat(2, min-content);
-  grid-template-rows: 49px min-content min-content 48px min-content;
+  grid-template-rows: 49px min-content min-content 47px min-content;
 }
 
 .hero__title {
@@ -39,7 +39,7 @@
   padding: 0;
   list-style: none;
   align-self: self-end;
-  margin-right: 21px;
+  margin-right: 22px;
 }
 
 .hero__description-item {
@@ -47,13 +47,14 @@
 }
 
 .hero__button {
+  max-width: 290px;
   font-family: inherit;
   font-size: 12px;
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
   color: inherit;
-  padding: 21px;
+  padding: 22px;
   background-color: transparent;
   border: 2px solid #ffffff;
   box-sizing: border-box;
@@ -70,8 +71,8 @@
 @media (min-width: 768px) {
   .hero {
     max-width: 678px;
-    grid-template-columns: repeat(3, min-content);
-    grid-template-rows: 31px min-content min-content 50px min-content 31px;
+    grid-template-columns: min-content 185px min-content;
+    grid-template-rows: 32px min-content min-content 49px min-content 32px;
   }
 
   .hero__title {
@@ -88,11 +89,12 @@
   .hero__description-list {
     font-size: inherit;
     line-height: inherit;
-    margin-right: 26px;
-    margin-bottom: 25px;
+    margin-right: 27px;
+    margin-bottom: 24px;
   }
 
   .hero__button {
+    padding: 20px;
     grid-column: 2 / 3;
   }
 
