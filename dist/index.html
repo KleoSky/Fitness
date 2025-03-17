@@ -4,44 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUPERGYM</title>
-  <script type="module" crossorigin src="./assets/index-BEp2zIYC.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-rnN3JI3F.css">
+  <meta name="description" content="Supergym – самый большой фитнес центр за Уралом." />
+  <title>SUPERGYM</title>
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="icon" href="./assets/favicon-DjKtdZh4.ico">
+  <link rel="icon" sizes="32x32" href="./assets/32-DvpiB3zb.png" type="image/png">
+  <link rel="icon" href="public/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/apple-BMc35qf-.png">
+  <link rel="manifest" href="./assets/manifest-Bu5-QkS6.webmanifest">
+  <script type="module" crossorigin src="./assets/index-DUsVFQsa.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DFfBYbMX.css">
 </head>
 
-<body class="body" style="background-color: dimgray;">
+<body class="body">
   <!-- <svg>
-      <use href="/assets/spritemap.c076426c.svg#sprite-user"></use>
+      <use href="/assets/spritemap.dddd7296.svg#sprite-user"></use>
     </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
   <div class="body__wrapper container">
-    <header class="hero__header header" data-test="hero">
-      <div class="header__main">
-        <img src="/assets/spritemap.c076426c.svg#sprite-logo-view" width="100" height="20" alt="Логотип сайта SUPERGYM">
-        <a class="header__link" href="tel:8-800-555-55-55">8 800 555-55-55</a>
-      </div>
-      <section class="hero__content">
-        <h1 class="hero__title">Фитнес центр</h1>
-        <p class="hero__location">Омск</p>
-        <ul class="hero__description-list">
-          <li class="hero__description-item">Тренажёрный</li>
-          <li class="hero__description-item">Групповые занятия</li>
-          <li class="hero__description-item">Кардио-зона</li>
-        </ul>
-        <button class="hero__button" type="button">Купить абонемент</button>
-        <div class="hero__picture">
-          <picture>
-            <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
-              srcset="./assets/hero-img-desktop@1x-6Lklgkip.webp 1x, ./assets/hero-img-desktop@2x-BDli7EGN.webp 2x">
-            <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
-              srcset="./assets/hero-img-tablet@1x-BJ_Dk7SL.webp 1x, ./assets/hero-img-tablet@2x-CKhLgvO2.webp 2x">
-            <source media="(min-width: 1336px)" width="500" height="524" type="image/jpeg"
-              srcset="./assets/hero-img-desktop@1x-B2UQABeZ.jpg 1x, ./assets/hero-img-desktop@2x-teseIwxz.jpg 2x">
-            <img src="./assets/hero-img-tablet@1x-CclZ6dka.jpg" srcset="./assets/hero-img-tablet@2x-BYPHv3jh.jpg 2x" width="324" height="390"
-              alt="Тренер фитнесс-зала">
-          </picture>
+    <header class="body__header header" data-test="hero">
+      <div class="header__wrapper">
+        <div class="header__main">
+          <img class="header__logo" src="./assets/logo-CfR_wMsl.svg" width="100" height="20"
+            alt="Логотип сайта SUPERGYM">
+          <a class="header__link" href="tel:8-800-555-55-55">8 800 555-55-55</a>
         </div>
-      </section>
+        <section class="header__hero hero">
+          <h1 class="hero__title">Фитнес центр</h1>
+          <p class="hero__location">Омск</p>
+          <ul class="hero__description-list">
+            <li class="hero__description-item">Тренажёрный зал</li>
+            <li class="hero__description-item">Групповые&nbsp;занятия</li>
+            <li class="hero__description-item">Кардио-зона</li>
+          </ul>
+          <button class="hero__button" type="button">Купить абонемент</button>
+          <div class="hero__picture">
+            <picture>
+              <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
+                srcset="./assets/hero-img-desktop@1x-6Lklgkip.webp 1x, ./assets/hero-img-desktop@2x-BDli7EGN.webp 2x">
+              <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
+                srcset="./assets/hero-img-tablet@1x-BJ_Dk7SL.webp 1x, ./assets/hero-img-tablet@2x-CKhLgvO2.webp 2x">
+              <source media="(min-width: 1336px)" width="500" height="524" type="image/jpeg"
+                srcset="./assets/hero-img-desktop@1x-B2UQABeZ.jpg 1x, ./assets/hero-img-desktop@2x-teseIwxz.jpg 2x">
+              <img src="./assets/hero-img-tablet@1x-CclZ6dka.jpg" srcset="./assets/hero-img-tablet@2x-BYPHv3jh.jpg 2x" width="324" height="390"
+                alt="Тренер фитнесс-зала">
+            </picture>
+          </div>
+        </section>
+      </div>
     </header>
     <main class="body__main main">
       <section class="main__about about" data-test="about">
@@ -67,14 +76,27 @@
               alt="Просторный тренажёрный зал">
           </picture>
         </div>
-        <div class="hero__video">
-          <iframe src="https://rutube.ru/video/0962cc6a02f003e300a237078ab7a229/" width="320" height="170"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="Демонстрация обстановки тренажёрного зала">
-          </iframe>
-          <button class="hero__play-button" type="button">
+        <div class="about__video-wrapper">
+          <div class="about__video">
+            <picture>
+              <source media="(min-width: 1366px)" width="360" height="320" type="image/webp"
+                srcset="./assets/video-preview-desktop@1x-0ot9XVno.webp 1x, ./assets/video-preview-desktop@2x-CM9oOc2K.webp 2x">
+              <source media="(min-width: 768px)" width="270" height="170" type="image/webp"
+                srcset="./assets/video-preview-tablet@1x-93tyA6bH.webp 1x, ./assets/video-preview-tablet@2x-BoOYOgc0.webp 2x">
+              <source width="320" height="170" type="image/webp"
+                srcset="./assets/video-preview-mobile@1x-B4Uch3G9.webp 1x, ./assets/video-preview-mobile@2x-D9OgZIjQ.webp 2x">
+              <source media="(min-width: 1336px)" width="360" height="320" type="image/jpeg"
+                srcset="./assets/video-preview-desktop@1x-BBUVswz3.jpg 1x, ./assets/video-preview-desktop@2x-BjnJ5u78.jpg 2x">
+              <source media="(min-width: 768px)" width="270" height="170" type="image/jpeg"
+                srcset="./assets/video-preview-tablet@1x-CIo1IGVM.jpg 1x, ./assets/video-preview-tablet@2x-DXvqLV31.jpg 2x">
+              <img src="./assets/video-preview-mobile@1x-DNSQK0jt.jpg" srcset="./assets/video-preview-mobile@2x-O1D-nT_R.jpg 2x" width="320"
+                height="170" alt="Просторный тренажёрный зал">
+            </picture>
+          </div>
+          <button class="about__play-button" type="button">
             <span class="visually-hidden">Запустить просмотр видео</span>
           </button>
+          <div class="about__iframe-container"></div>
         </div>
       </section>
       <section class="main__price price" data-test="price">
@@ -170,41 +192,39 @@
           </ul>
         </div>
       </section>
-      <div class="main__games games">
-        <section class="main__games games" data-test="games">
-          <h2 class="games__title">Super Games</h2>
-          <div class="games__datetime">
-            <div class="games__date">
-              <span class="games__date-text">Дата</span>
-              <p class="games__date-number">7</p>
-              <span class="games__date-month">Марта</span>
-              <span class="games__date-year">2019</span>
-            </div>
-            <div class="games__time">
-              <span class="games__time-text">Время</span>
-              <p class="games__time-number">12:00</p>
-            </div>
+      <section class="main__games games" data-test="games">
+        <h2 class="games__title">Super Games</h2>
+        <div class="games__datetime">
+          <div class="games__date">
+            <span class="games__date-text">Дата</span>
+            <p class="games__date-number">7</p>
+            <span class="games__date-month">Марта</span>
+            <span class="games__date-year">2019</span>
           </div>
-          <p class="games__description">Ежегодные соревнования по CrossFit</p>
-          <a class="games__link" href="#">Заполнить заявку</a>
-          <div class="games__picture">
-            <picture>
-              <source media="(min-width: 1366px)" width="660" height="500" type="image/webp"
-                srcset="./assets/games-img-desktop@1x-PMN2EWDQ.webp 1x, ./assets/games-img-desktop@2x-DZiiAuPK.webp 2x">
-              <source media="(min-width: 768px)" width="378" height="348" type="image/webp"
-                srcset="./assets/games-img-tablet@1x-Dp8kR8lu.webp 1x, ./assets/games-img-tablet@2x-DbM48S3v.webp 2x">
-              <source width="290" height="290" type="image/webp"
-                srcset="./assets/games-img-mobile@1x-C1U9Yd9s.webp 1x, ./assets/games-img-mobile@2x-B8rkeNoo.webp 2x">
-              <source media="(min-width: 1336px)" width="660" height="500" type="image/jpeg"
-                srcset="./assets/games-img-desktop@1x-C2xOFWlV.jpg 1x, ./assets/games-img-desktop@2x-B9SpzYyY.jpg 2x">
-              <source media="(min-width: 768px)" width="378" height="348" type="image/jpeg"
-                srcset="./assets/games-img-tablet@1x-x7OG03a9.jpg 1x, ./assets/games-img-tablet@2x-DFANZPxR.jpg 2x">
-              <img src="./assets/games-img-mobile@1x-By-QA-Gz.jpg" srcset="./assets/games-img-mobile@2x-eXzQLuP8.jpg 2x" width="290" height="290"
-                alt="Мужчина во время тренировки">
-            </picture>
+          <div class="games__time">
+            <span class="games__time-text">Время</span>
+            <p class="games__time-number">12:00</p>
           </div>
-        </section>
-      </div>
+        </div>
+        <p class="games__description">Ежегодные соревнования по CrossFit</p>
+        <a class="games__link" href="#">Заполнить заявку</a>
+        <div class="games__picture">
+          <picture>
+            <source media="(min-width: 1366px)" width="660" height="500" type="image/webp"
+              srcset="./assets/games-img-desktop@1x-PMN2EWDQ.webp 1x, ./assets/games-img-desktop@2x-DZiiAuPK.webp 2x">
+            <source media="(min-width: 768px)" width="378" height="348" type="image/webp"
+              srcset="./assets/games-img-tablet@1x-Dp8kR8lu.webp 1x, ./assets/games-img-tablet@2x-DbM48S3v.webp 2x">
+            <source width="290" height="290" type="image/webp"
+              srcset="./assets/games-img-mobile@1x-C1U9Yd9s.webp 1x, ./assets/games-img-mobile@2x-B8rkeNoo.webp 2x">
+            <source media="(min-width: 1336px)" width="660" height="500" type="image/jpeg"
+              srcset="./assets/games-img-desktop@1x-C2xOFWlV.jpg 1x, ./assets/games-img-desktop@2x-B9SpzYyY.jpg 2x">
+            <source media="(min-width: 768px)" width="378" height="348" type="image/jpeg"
+              srcset="./assets/games-img-tablet@1x-x7OG03a9.jpg 1x, ./assets/games-img-tablet@2x-DFANZPxR.jpg 2x">
+            <img src="./assets/games-img-mobile@1x-By-QA-Gz.jpg" srcset="./assets/games-img-mobile@2x-eXzQLuP8.jpg 2x" width="290" height="290"
+              alt="Мужчина во время тренировки">
+          </picture>
+        </div>
+      </section>
       <section class="main__juri juri" data-test="juri">
         <h2 class="juri__title">Жюри</h2>
         <ul class="juri__list">
@@ -670,10 +690,9 @@
               <h4 class="contacts__subtitle">Адрес:</h4>
               <address class="contacts__address-info">г. Омск, ул. 60 лет Октября, 7</address>
             </div>
-            <div class="contacts__chart">
+            <div class="contacts__schedule">
               <h4 class="contacts__subtitle">График работы:</h4>
-              <time class="contacts__chart-info" itemprop="openingHours"
-                datetime="ПН, ВТ, СР, ЧТ, ПТ, СБ, ВС 8:00-22:00">Пн-Вс: с 8:00 до 22:00</time>
+              <p class="contacts__schedule-info">Пн-Вс: с 8:00 до 22:00</p>
             </div>
             <div class="contacts__phone">
               <h4 class="contacts__subtitle">Телефон:</h4>
@@ -687,7 +706,45 @@
         </div>
       </section>
     </main>
-    <div data-test="footer">footer</div>
+    <footer class="main__footer footer" data-test="footer">
+      <img src="/assets/spritemap.dddd7296.svg#sprite-logo-view" width="100" height="20" alt="Логотип сайта SUPERGYM">
+      <nav class="footer__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Абонементы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Акции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Тренеры</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Расписание</a>
+          </li>
+        </ul>
+        <ul class="nav__social-list social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
+              <span class="visually-hidden">VKontakte</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ok" href="#">
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--rd" href="#">
+              <span class="visually-hidden">Reddit</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </div>
 </body>
 
