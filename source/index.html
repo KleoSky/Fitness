@@ -15,38 +15,41 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="body" style="background-color: dimgray;">
+<body class="body">
   <!-- <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
   <div class="body__wrapper container">
     <header class="body__header header" data-test="hero">
-      <div class="header__main">
-        <img src="/__spritemap#sprite-logo-view" width="100" height="20" alt="Логотип сайта SUPERGYM">
-        <a class="header__link" href="tel:8-800-555-55-55">8 800 555-55-55</a>
-      </div>
-      <section class="header__hero hero">
-        <h1 class="hero__title">Фитнес центр</h1>
-        <p class="hero__location">Омск</p>
-        <ul class="hero__description-list">
-          <li class="hero__description-item">Тренажёрный</li>
-          <li class="hero__description-item">Групповые занятия</li>
-          <li class="hero__description-item">Кардио-зона</li>
-        </ul>
-        <button class="hero__button" type="button">Купить абонемент</button>
-        <div class="hero__picture">
-          <picture>
-            <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
-              srcset="img/hero-img-desktop@1x.webp 1x, img/hero-img-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
-              srcset="img/hero-img-tablet@1x.webp 1x, img/hero-img-tablet@2x.webp 2x">
-            <source media="(min-width: 1336px)" width="500" height="524" type="image/jpeg"
-              srcset="img/hero-img-desktop@1x.jpg 1x, img/hero-img-desktop@2x.jpg 2x">
-            <img src="img/hero-img-tablet@1x.jpg" srcset="img/hero-img-tablet@2x.jpg 2x" width="324" height="390"
-              alt="Тренер фитнесс-зала">
-          </picture>
+      <div class="header__wrapper">
+        <div class="header__main">
+          <img class="header__logo" src="img/logo.svg" width="100" height="20"
+            alt="Логотип сайта SUPERGYM">
+          <a class="header__link" href="tel:8-800-555-55-55">8 800 555-55-55</a>
         </div>
-      </section>
+        <section class="header__hero hero">
+          <h1 class="hero__title">Фитнес центр</h1>
+          <p class="hero__location">Омск</p>
+          <ul class="hero__description-list">
+            <li class="hero__description-item">Тренажёрный зал</li>
+            <li class="hero__description-item">Групповые&nbsp;занятия</li>
+            <li class="hero__description-item">Кардио-зона</li>
+          </ul>
+          <button class="hero__button" type="button">Купить абонемент</button>
+          <div class="hero__picture">
+            <picture>
+              <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
+                srcset="img/hero-img-desktop@1x.webp 1x, img/hero-img-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
+                srcset="img/hero-img-tablet@1x.webp 1x, img/hero-img-tablet@2x.webp 2x">
+              <source media="(min-width: 1336px)" width="500" height="524" type="image/jpeg"
+                srcset="img/hero-img-desktop@1x.jpg 1x, img/hero-img-desktop@2x.jpg 2x">
+              <img src="img/hero-img-tablet@1x.jpg" srcset="img/hero-img-tablet@2x.jpg 2x" width="324" height="390"
+                alt="Тренер фитнесс-зала">
+            </picture>
+          </div>
+        </section>
+      </div>
     </header>
     <main class="body__main main">
       <section class="main__about about" data-test="about">
