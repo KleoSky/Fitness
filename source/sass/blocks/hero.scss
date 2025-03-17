@@ -6,7 +6,7 @@
 }
 
 .hero__title {
-  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-family: var(--font-second, inherit);
   font-size: 62px;
   line-height: 1;
   font-weight: 800;
@@ -19,7 +19,7 @@
 }
 
 .hero__location {
-  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-family: var(--font-second, inherit);
   font-size: 32px;
   line-height: 1;
   font-weight: 600;

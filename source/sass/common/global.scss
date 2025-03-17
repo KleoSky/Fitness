@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: var(--font-base, inherit);
   font-size: 14px;
   line-height: 1.57;
   font-weight: 300;
