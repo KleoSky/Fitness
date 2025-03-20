@@ -63,13 +63,13 @@
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .hero__picture {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .hero {
     max-width: 678px;
     grid-template-columns: min-content 185px min-content;
@@ -108,7 +108,7 @@
   }
 }
 
-@media (min-width: 1366px) {
+@media (width >= 1366px) {
   .hero {
     max-width: 1160px;
     grid-template-columns: 149px min-content 270px min-content 72px;
