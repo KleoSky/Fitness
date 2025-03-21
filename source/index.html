@@ -208,36 +208,38 @@
         </div>
       </section>
       <section class="main__games games" data-test="games">
-        <h2 class="games__title">Super Games</h2>
-        <div class="games__datetime">
-          <div class="games__date">
-            <span class="games__date-text">Дата</span>
-            <p class="games__date-number">7</p>
-            <span class="games__date-month">Марта</span>
-            <span class="games__date-year">2019</span>
+        <div class="games__wrapper">
+          <h2 class="games__title">Super Games</h2>
+          <div class="games__datetime">
+            <div class="games__date">
+              <span class="games__date-text">Дата</span>
+              <p class="games__date-number">7</p>
+              <span class="games__date-month">Марта</span>
+              <span class="games__date-year">2019</span>
+            </div>
+            <div class="games__time">
+              <span class="games__time-text">Время</span>
+              <p class="games__time-number">12:00</p>
+            </div>
           </div>
-          <div class="games__time">
-            <span class="games__time-text">Время</span>
-            <p class="games__time-number">12:00</p>
+          <p class="games__description">Ежегодные соревнования по CrossFit</p>
+          <button class="games__button" href="#">Заполнить заявку</button>
+          <div class="games__picture">
+            <picture>
+              <source media="(min-width: 1366px)" width="660" height="500" type="image/webp"
+                srcset="img/games-img-desktop@1x.webp 1x, img/games-img-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" width="378" height="348" type="image/webp"
+                srcset="img/games-img-tablet@1x.webp 1x, img/games-img-tablet@2x.webp 2x">
+              <source width="290" height="290" type="image/webp"
+                srcset="img/games-img-mobile@1x.webp 1x, img/games-img-mobile@2x.webp 2x">
+              <source media="(min-width: 1336px)" width="660" height="500" type="image/jpeg"
+                srcset="img/games-img-desktop@1x.jpg 1x, img/games-img-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="378" height="348" type="image/jpeg"
+                srcset="img/games-img-tablet@1x.jpg 1x, img/games-img-tablet@2x.jpg 2x">
+              <img src="img/games-img-mobile@1x.jpg" srcset="img/games-img-mobile@2x.jpg 2x" width="290" height="290"
+                alt="Мужчина во время тренировки">
+            </picture>
           </div>
-        </div>
-        <p class="games__description">Ежегодные соревнования по CrossFit</p>
-        <a class="games__link" href="#">Заполнить заявку</a>
-        <div class="games__picture">
-          <picture>
-            <source media="(min-width: 1366px)" width="660" height="500" type="image/webp"
-              srcset="img/games-img-desktop@1x.webp 1x, img/games-img-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" width="378" height="348" type="image/webp"
-              srcset="img/games-img-tablet@1x.webp 1x, img/games-img-tablet@2x.webp 2x">
-            <source width="290" height="290" type="image/webp"
-              srcset="img/games-img-mobile@1x.webp 1x, img/games-img-mobile@2x.webp 2x">
-            <source media="(min-width: 1336px)" width="660" height="500" type="image/jpeg"
-              srcset="img/games-img-desktop@1x.jpg 1x, img/games-img-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" width="378" height="348" type="image/jpeg"
-              srcset="img/games-img-tablet@1x.jpg 1x, img/games-img-tablet@2x.jpg 2x">
-            <img src="img/games-img-mobile@1x.jpg" srcset="img/games-img-mobile@2x.jpg 2x" width="290" height="290"
-              alt="Мужчина во время тренировки">
-          </picture>
         </div>
       </section>
       <section class="main__juri juri" data-test="juri">
