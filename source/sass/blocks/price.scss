@@ -1,5 +1,6 @@
 .price {
   background-color: var(--bg-second, #000080);
+  padding-top: 41px;
 }
 
 .price__title {
@@ -9,8 +10,7 @@
   font-weight: 600;
   text-align: center;
   margin: 0;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .price__filter {
@@ -34,15 +34,29 @@
   display: flex;
   flex-wrap: wrap;
   gap: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .price__tab-item {
+  line-height: 1;
   margin-right: 0.5px;
+}
+
+.price__tab-item:has(button:not(.price__button--current):not(:disabled)):hover {
+  border-bottom: 2px solid #787878;
+}
+
+.price__tab-item:has(button:not(.price__button--current)):focus {
+  border-bottom: 2px solid var(--color-base, #000080);
 }
 
 .price__tab-item--current {
   border-bottom: 2px solid var(--active-border, #ff0000);
+}
+
+.price__tab-item--current:has(button:disabled) {
+  border-bottom: 2px solid var(--color-base, #000080);
+  opacity: 0.3;
 }
 
 .price__button {
@@ -53,14 +67,119 @@
   background-color: transparent;
   border: none;
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+
+  &:hover:not(.price__button--current):not(:disabled) {
+    color: rgba(16, 38, 84, 0.7);
+  }
+
+  &:focus:not(.price__button--current):not(:disabled),
+  &:focus-visible:not(.price__button--current):not(:disabled) {
+    color: var(--color-base, #000080);
+  }
 }
 
 .price__button--current {
   color: inherit;
-  padding-bottom: 8px;
 }
 
 .price__info-item--hidden {
   display: none;
+}
+
+@media (width >=768px) {
+  .price {
+    padding-top: 61px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 328px;
+      height: 275px;
+      top: 82%;
+      right: -5.4%;
+      background-image:
+        image-set("../../img/barbell-discs-tablet@2x.webp" 2x,
+          "../../img/barbell-discs-tablet@1x.webp" 1x,
+          "../../img/barbell-discs-tablet@2x.png" 2x,
+          "../../img/barbell-discs-tablet@1x.png" 1x);
+      background-repeat: no-repeat;
+      background-size: 328px 275px;
+      transform: rotate(60deg);
+      z-index: 0;
+    }
+  }
+
+  .price__title {
+    font-size: 42px;
+    margin-bottom: 37px;
+  }
+
+  .price__button {
+    font-size: 18px;
+  }
+
+  .price__filter {
+    min-width: 380px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+
+  .price__tab-list {
+    gap: 43px;
+    margin-bottom: 42px;
+  }
+
+  .price__tab-item {
+    margin: 0;
+  }
+}
+
+@media (width >=1366px) {
+  .price {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+      top: 59.5%;
+      right: -6.7%;
+    }
+  }
+
+  .price__title {
+    font-size: 54px;
+    margin-bottom: 20px;
+  }
+
+  .price__button {
+    font-size: 20px;
+  }
+
+  .price__filter {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .price__tab-list {
+    gap: 50px;
+    margin-bottom: 40px;
+  }
+
+  .price__tab-item {
+    margin-right: 0.5px;
+  }
+
+  .price__cards-list {
+    display: flex;
+    gap: 40px;
+  }
 }

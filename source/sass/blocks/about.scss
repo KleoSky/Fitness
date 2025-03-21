@@ -89,8 +89,8 @@
     border-radius: 50%;
     background-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     position: absolute;
-    top: 11%;
-    right: 11%;
+    top: 13%;
+    right: 12%;
     z-index: 2;
   }
 
@@ -107,15 +107,65 @@
     transform: translate(-43% -40%);
     z-index: 3;
   }
+
+  &:hover:not(:disabled) {
+    border-color: rgba(16, 38, 84, 0.6);
+  }
+
+  &:hover:not(:disabled)::before {
+    background-image: none;
+    background-color: var(--bg-base, #ffffff);
+  }
+
+  &:hover:not(:disabled)::after {
+    background-color: rgba(16, 38, 84, 0.6);
+  }
+
+  &:focus:not(:disabled),
+  &:active:not(:disabled) {
+    border-color: var(--color-base, #000080);
+  }
+
+  &:focus:not(:disabled)::before,
+  &:active:not(:disabled)::before {
+    background-image: none;
+    background-color: #c8c9cc;
+  }
+
+  &:focus:not(:disabled)::after,
+  &:active:not(:disabled)::after {
+    background-color: var(--color-base, #000080);
+  }
+
+  &:active:not(:disabled)::before {
+    width: 40px;
+    height: 40px;
+    top: 20%;
+    right: 20%;
+  }
+
+  &:disabled {
+    border-color: rgba(16, 38, 84, 0.4);
+    cursor: default;
+  }
+
+  &:disabled::before {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:disabled::after {
+    background-color: rgba(16, 38, 84, 0.4);
+  }
 }
 
-@media (width <= 1365px) {
+@media (width <=1365px) {
   .about__info span {
     display: none;
   }
 }
 
-@media (width >= 768px) {
+@media (width >=768px) {
   .about {
     position: relative;
     padding-bottom: 84px;
@@ -169,7 +219,7 @@
   }
 }
 
-@media (width >= 768px) and (width <= 1365px) {
+@media (width >=768px) and (width <=1365px) {
   .about__info {
     display: flex;
     flex-direction: column;
@@ -178,7 +228,7 @@
   }
 }
 
-@media (width >= 1366px) {
+@media (width >=1366px) {
   .about {
     max-width: 1160px;
     margin: 0 auto;
@@ -229,5 +279,28 @@
   .about__video::after {
     width: 360px;
     height: 230px;
+  }
+
+  .about__play-button {
+    width: 100px;
+    height: 100px;
+
+    &::before {
+      width: 72px;
+      height: 72px;
+    }
+
+    &::after {
+      width: 17px;
+      height: 17px;
+      mask-size: 17px 17px;
+    }
+
+    &:active:not(:disabled)::before {
+      width: 58px;
+      height: 58px;
+      top: 20%;
+      right: 20%;
+    }
   }
 }

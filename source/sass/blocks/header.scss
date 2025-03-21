@@ -33,9 +33,26 @@
   font-weight: 700;
   text-decoration: none;
   color: inherit;
+
+  &:hover:not(:disabled) {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus:not(:disabled) {
+    color: var(--bg-third, #000080);
+  }
+
+  &:active:not(:disabled) {
+    color: var(--color-base, #000080);
+    text-decoration: underline;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
-@media (width >= 768px) {
+@media (width >=768px) {
   .header {
     padding: 30px 45px 100px;
   }
@@ -59,7 +76,7 @@
   }
 }
 
-@media (width >= 1366px) {
+@media (width >=1366px) {
   .header {
     padding: 31px 103px 120px;
   }

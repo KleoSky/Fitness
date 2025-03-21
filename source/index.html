@@ -15,9 +15,6 @@
 </head>
 
 <body class="body">
-  <!-- <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
   <div class="body__wrapper container">
     <header class="body__header header" data-test="hero">
       <div class="header__wrapper">
@@ -103,13 +100,13 @@
         <h2 class="price__title">Абонементы</h2>
         <div class="price__filter">
           <ul class="price__tab-list">
-            <li class="price__tab-item price__tab-item--current">
+            <li class="price__tab-item price__tab-item--current" rel="tab1">
               <button class="price__button price__button--current" type="button" rel="tab1">1 месяц</button>
             </li>
-            <li class="price__tab-item">
+            <li class="price__tab-item" rel="tab2">
               <button class="price__button" type="button" rel="tab2">6 месяцев</button>
             </li>
-            <li class="price__tab-item">
+            <li class="price__tab-item" rel="tab3">
               <button class="price__button" type="button" rel="tab3">12 месяцев</button>
             </li>
           </ul>
@@ -123,7 +120,7 @@
                     <p class="card__price">5000</p>
                     <span class="card__price-transparent" aria-hidden="true">5000</span>
                   </div>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Дневной</h3>
@@ -132,7 +129,7 @@
                     <p class="card__price">1700</p>
                     <span class="card__price-transparent" aria-hidden="true">1700</span>
                   </div>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Полный день</h3>
@@ -141,7 +138,7 @@
                     <p class="card__price">2700</p>
                     <span class="card__price-transparent" aria-hidden="true">2700</span>
                   </div>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
               </ul>
             </li>
@@ -154,7 +151,7 @@
                     <p class="card__price">30000</p>
                     <span class="card__price-transparent" aria-hidden="true">30000</span>
                   </div>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Дневной</h3>
@@ -163,7 +160,7 @@
                     <p class="card__price">10200</p>
                     <span class="card__price-transparent" aria-hidden="true">10200</span>
                   </div>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Полный день</h3>
@@ -172,7 +169,7 @@
                     <p class="card__price">16200</p>
                     <span class="card__price-transparent" aria-hidden="true">16200</span>
                   </div>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
               </ul>
             </li>
@@ -185,7 +182,7 @@
                     <p class="card__price">60000</p>
                     <span class="card__price-transparent" aria-hidden="true">60000</span>
                   </div>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Дневной</h3>
@@ -194,7 +191,7 @@
                     <p class="card__price">20400</p>
                     <span class="card__price-transparent" aria-hidden="true">20400</span>
                   </div>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Полный день</h3>
@@ -203,7 +200,7 @@
                     <p class="card__price">32400</p>
                     <span class="card__price-transparent" aria-hidden="true">32400</span>
                   </div>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
               </ul>
             </li>
@@ -698,8 +695,8 @@
           </label>
           <label class="form__tel">
             <span class="visually-hidden">Ваш телефон</span>
-            <input class="form__tel-input" type="text" name="tel-input" pattern="^[0-9]+$"
-              placeholder="Телефон" required>
+            <input class="form__tel-input" type="text" name="tel-input" pattern="^[0-9]+$" placeholder="Телефон"
+              required>
           </label>
           <button class="form__button" type="submit">Отправить</button>
         </form>
@@ -747,6 +744,9 @@
           </li>
         </ul>
         <ul class="nav__social-list social">
+          <!-- <svg>
+      <use href="/__spritemap#sprite-user"></use>
+    </svg> -->
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">VKontakte</span>
