@@ -1,7 +1,13 @@
 // https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
+
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
-import { switchTab } from './price';
+import { switchTab } from './modules/price';
 switchTab();
+
+import { scroll } from './modules/hero';
+scroll();
+
+import { initSwiper } from './modules/juri';
+initSwiper();
