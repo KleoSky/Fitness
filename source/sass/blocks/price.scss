@@ -88,7 +88,7 @@
   display: none;
 }
 
-@media (width >=768px) {
+@media (width >= 768px) {
   .price {
     padding-top: 61px;
     position: relative;
@@ -104,9 +104,9 @@
       right: -5.4%;
       background-image:
         image-set("../../img/barbell-discs-tablet@2x.webp" 2x,
-          "../../img/barbell-discs-tablet@1x.webp" 1x,
-          "../../img/barbell-discs-tablet@2x.png" 2x,
-          "../../img/barbell-discs-tablet@1x.png" 1x);
+        "../../img/barbell-discs-tablet@1x.webp" 1x,
+        "../../img/barbell-discs-tablet@2x.png" 2x,
+        "../../img/barbell-discs-tablet@1x.png" 1x);
       background-repeat: no-repeat;
       background-size: 328px 275px;
       transform: rotate(60deg);
@@ -140,7 +140,7 @@
   }
 }
 
-@media (width >=1366px) {
+@media (width >= 1366px) {
   .price {
     padding: 100px;
     display: flex;

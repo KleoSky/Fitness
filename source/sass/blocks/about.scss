@@ -163,13 +163,13 @@
   }
 }
 
-@media (width <=1365px) {
+@media (width <= 1365px) {
   .about__info span {
     display: none;
   }
 }
 
-@media (width >=768px) {
+@media (width >= 768px) {
   .about {
     position: relative;
     padding-bottom: 84px;
@@ -223,7 +223,7 @@
   }
 }
 
-@media (width >=768px) and (width <=1365px) {
+@media (width >= 768px) and (width <= 1365px) {
   .about__info {
     display: flex;
     flex-direction: column;
@@ -232,7 +232,7 @@
   }
 }
 
-@media (width >=1366px) {
+@media (width >= 1366px) {
   .about {
     max-width: 1160px;
     margin: 0 auto;
