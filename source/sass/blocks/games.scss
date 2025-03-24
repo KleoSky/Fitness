@@ -55,6 +55,7 @@
   box-sizing: border-box;
   grid-column: 2 / 4;
   grid-row: 4 / 5;
+  cursor: pointer;
 
   &:hover:not(:disabled) {
     background-color: var(--bg-base, #000080);
@@ -153,7 +154,7 @@
 
 @media (min-width: 768px) {
   .games {
-    min-width: 678px;
+    min-width: 768px;
     padding: 60px 45px;
   }
 
