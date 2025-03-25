@@ -67,11 +67,31 @@
   .juri__button {
     cursor: pointer;
     border: transparent;
-    width: 29px;
+    width: 32px;
     height: 32px;
     background-color: inherit;
+    border-radius: 50%;
+    border: 1px solid transparent;
     padding: 0;
     z-index: 10;
+
+    &:hover,
+    &:focus {
+      border-color: var(--color-base, #000080);
+    }
+
+    &:focus {
+      background-color: #e8e8e8;
+    }
+
+    &:active {
+      background-color: var(--color-base, #000080);
+      border-color: var(--color-base, #000080);
+    }
+
+    &:active::before {
+      border-color: var(--color-second, #ffffff);
+    }
   }
 
   .juri__button--prev::before,
@@ -86,7 +106,7 @@
   }
 
   .juri__button--prev::before {
-    left: 8px;
+    left: 10px;
     clip-path: polygon(0 0, 100% 100%, 0 100%);
   }
 
@@ -123,5 +143,10 @@
   .juri__wrapper .juri__swiper {
     display: flex;
     justify-content: center;
+  }
+
+  .juri__button {
+    width: 36px;
+    height: 32px;
   }
 }
