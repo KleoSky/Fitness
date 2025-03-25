@@ -1,13 +1,17 @@
-import Swiper from "swiper";
-import {Navigation, Pagination} from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 import '../../sass/vendor/swiper.css';
 
 const initSwiper = () => {
   const container = document.querySelector('.swiper');
-  if (!container) return;
+  if (!container) {
+    return () => { };
+  }
+
+  let swiper;
 
   document.addEventListener('DOMContentLoaded', () => {
-    const swiper = new Swiper(container, {
+    swiper = new Swiper(container, {
       loop: true,
       loopAdditionalSlides: 2,
       loopSlides: 8,
@@ -61,17 +65,14 @@ const initSwiper = () => {
         nextButton.classList.remove('disabled');
       }
     }
+  });
 
-    // container.addEventListener('mouseenter', () => {
-    //   swiper.params.autoplay?.disable();
-    // });
-
-    // container.addEventListener('mouseleave', () => {
-    //   swiper.params.autoplay?.enable();
-    // });
-  })
-
-  return () => swiper.destroy();
+  return () => {
+    if (swiper) {
+      swiper.destroy()
+    }
+    ;
+  };
 };
 
-export {initSwiper};
+export { initSwiper };
