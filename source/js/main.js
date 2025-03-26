@@ -8,3 +8,9 @@ scroll();
 
 import { initSwiper } from './modules/juri';
 initSwiper();
+
+import { switchFaqTab } from './modules/faq';
+switchFaqTab();
+
+import { initAccordions } from './modules/faq';
+initAccordions();
