@@ -261,7 +261,7 @@
   }
 }
 
-@media (max-width: 1365px) {
+@media (min-width: 321px) and (max-width: 1365px){
   .faq__info-item:not(.faq__info-item--current, .faq__info-item:last-child) {
     padding-bottom: 13px;
   }
@@ -314,6 +314,10 @@
 
   .faq__info-item:first-child {
     border-top: 1px solid #74819c;
+  }
+
+  .faq__info-item:first-child p {
+    width: 600px;
   }
 
   .faq__info-item:not(.faq__info-item--current) {
