@@ -1,5 +1,6 @@
 .juri {
   width: 290px;
+  background-color: var(--bg-base, #ffffff);
   margin: 0 auto;
   padding: 40px 15px;
   display: flex;
@@ -12,10 +13,6 @@
 }
 
 .juri__title {
-  font-family: var(--font-second, inherit);
-  font-size: 32px;
-  line-height: 1;
-  font-weight: 600;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -51,16 +48,11 @@
     column-gap: 26px;
   }
 
-  .juri .juri__list {
-    width: 560px;
-  }
-
   .juri .swiper {
     width: 560px;
   }
 
   .juri__title {
-    font-size: 54px;
     margin-bottom: 46px;
   }
 

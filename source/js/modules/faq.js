@@ -50,7 +50,6 @@ const initAccordions = () => {
       state.set('tab4', new Set(['tab8']));
       saveState();
     }
-    console.log(defaultItem);
   };
 
   const loadState = () => {

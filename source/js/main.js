@@ -1,5 +1,3 @@
-// https://swiperjs.com/get-started#installation
-
 import { switchTab } from './modules/price';
 switchTab();
 
@@ -9,8 +7,12 @@ scroll();
 import { initSwiper } from './modules/juri';
 initSwiper();
 
-import { switchFaqTab } from './modules/faq';
+import { switchFaqTab, initAccordions } from './modules/faq';
 switchFaqTab();
-
-import { initAccordions } from './modules/faq';
 initAccordions();
+
+// import { initSwiperReviews } from './modules/reviews';
+// initSwiperReviews();
+
+// import { initSwipers } from './modules/swiper';
+// initSwipers();

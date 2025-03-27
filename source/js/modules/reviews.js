@@ -2,41 +2,26 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import '../../sass/vendor/swiper.css';
 
-const initSwiper = () => {
+const initSwiperReviews = () => {
   const container = document.querySelector('.swiper');
   if (!container) {
     return () => { };
   }
 
-  let swiper1;
+  let swiper;
 
   document.addEventListener('DOMContentLoaded', () => {
-    swiper1 = new Swiper(container, {
-      loop: true,
-      loopAdditionalSlides: 2,
-      loopSlides: 8,
-      normalizeSlideIndex: true,
-      watchSlidesProgress: false,
-      slideToClickedSlide: false,
+    swiper = new Swiper(container, {
       slidesPerView: 1,
       spaceBetween: 0,
+      allowTouchMove: true,
       modules: [Navigation, Pagination],
       navigation: {
-        nextEl: '.juri__button--next',
-        prevEl: '.juri__button--prev',
+        nextEl: '.reviews__button--next',
+        prevEl: '.reviews__button--prev',
       },
       breakpoints: {
-        320: {
-          allowTouchMove: true,
-        },
         768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-          allowTouchMove: true,
-        },
-        1366: {
-          slidesPerView: 4,
-          spaceBetween: 40,
           allowTouchMove: false,
         },
       },
@@ -51,11 +36,11 @@ const initSwiper = () => {
     });
 
     function updateButtonStates(swiperInstance) {
-      const prevButton = document.querySelector('.juri__button--prev');
-      const nextButton = document.querySelector('.juri__button--next');
+      const prevButton = document.querySelector('.reviews__button--prev');
+      const nextButton = document.querySelector('.reviews__button--next');
 
-      prevButton.disabled = false;
-      nextButton.disabled = false;
+      prevButton.disabled = true;
+      nextButton.disabled = true;
 
       if (swiperInstance.isBeginning && !swiperInstance.params.loop) {
         prevButton.classList.add('disabled');
@@ -70,6 +55,13 @@ const initSwiper = () => {
       }
     }
   });
+
+  return () => {
+    if (swiper) {
+      swiper.destroy()
+    }
+    ;
+  };
 };
 
-export { initSwiper };
+export { initSwiperReviews };

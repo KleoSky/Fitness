@@ -1,6 +1,7 @@
 .offers {
   width: 100%;
   padding: 40px 0;
+  background-color: var(--bg-base, #ffffff);
 }
 
 .offers__wrapper {
@@ -8,10 +9,6 @@
 }
 
 .offers__title {
-  font-family: var(--font-second, inherit);
-  font-size: 32px;
-  line-height: 1;
-  font-weight: 600;
   text-align: center;
   margin: 0;
   margin-bottom: 40px;
@@ -193,7 +190,6 @@
   }
 
   .offers__title {
-    font-size: 42px;
     margin-bottom: 35px;
   }
 
@@ -296,7 +292,6 @@
   }
 
   .offers__title {
-    font-size: 54px;
     margin-bottom: 70px;
     grid-column: 1 / -1;
     grid-row: 1 / 2;

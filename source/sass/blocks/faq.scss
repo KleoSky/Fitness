@@ -1,20 +1,13 @@
 .faq {
   width: 100%;
-  background-color: var(--bg-second, #ffffff);
+  background-color: var(--bg-second, #f8f9fc);
 }
 
 .faq__wrapper {
-  width: 320px;
-  margin: 0 auto;
   padding: 70px 15px;
-  box-sizing: border-box;
 }
 
 .faq__title {
-  font-family: var(--font-second, inherit);
-  font-size: 32px;
-  line-height: 1;
-  font-weight: 600;
   text-align: center;
   margin: 0;
   margin-bottom: 35px;
@@ -201,14 +194,10 @@
 
 @media (min-width: 768px) {
   .faq__wrapper {
-    width: 768px;
-    margin: 0 auto;
     padding: 60px 45px;
-    box-sizing: border-box;
   }
 
   .faq__title {
-    font-size: 42px;
     margin-bottom: 45px;
   }
 
@@ -273,8 +262,6 @@
 
 @media (min-width: 1366px) {
   .faq__wrapper {
-    width: 1366px;
-    margin: 0 auto;
     padding: 100px 103px;
     display: flex;
     flex-direction: column;
@@ -283,11 +270,8 @@
   }
 
   .faq__title {
-    font-size: 54px;
     margin-bottom: 50px;
     text-align: left;
-    display: flex;
-    flex-direction: column;
   }
 
   .faq__tabs {
