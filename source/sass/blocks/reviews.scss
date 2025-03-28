@@ -50,8 +50,8 @@
 
   .reviews__button {
     cursor: pointer;
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     background-color: inherit;
     border-radius: 50%;
     border: 1px solid transparent;
@@ -65,7 +65,8 @@
       border-color: var(--color-base, #000080);
     }
 
-    &:focus {
+    &:focus,
+    &:focus-visible {
       background-color: #e8e8e8;
     }
 
@@ -89,7 +90,7 @@
   }
 
   .reviews__button--next {
-    left: 500px;
+    left: 494px;
   }
 
   .reviews__button--prev::before,
@@ -109,7 +110,7 @@
   }
 
   .reviews__button--next::before {
-    left: 2px;
+    left: 4px;
     clip-path: polygon(100% 0, 100% 100%, 0 0);
   }
 
@@ -137,6 +138,6 @@
   }
 
   .reviews__button--next {
-    left: 580px;
+    left: 574px;
   }
 }

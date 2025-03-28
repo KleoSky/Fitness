@@ -27,6 +27,7 @@
 .juri__list .member {
   width: 260px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 @media (width <= 767px) {
