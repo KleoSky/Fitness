@@ -58,9 +58,9 @@ const initSwiperReviews = () => {
 
   return () => {
     if (swiper) {
-      swiper.destroy()
+      swiper.destroy();
     }
-    ;
+
   };
 };
 

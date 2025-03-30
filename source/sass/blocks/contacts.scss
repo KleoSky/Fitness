@@ -52,7 +52,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .contacts {
     padding: 60px;
   }
@@ -123,23 +123,20 @@
   }
 }
 
-@media (min-width: 1366px) {
+@media (width >= 1366px) {
   .contacts {
     padding: 60px 103px;
     border-top: 1px solid #74819c;
   }
 
   .contacts__wrapper {
+    column-gap: 121px;
+    row-gap: 14px;
     grid-template-columns: repeat(2, 178px);
   }
 
   .contacts .contacts__title {
     align-self: flex-start;
-  }
-
-  .contacts__wrapper {
-    column-gap: 121px;
-    row-gap: 14px;
   }
 
   .contacts__info-wrapper {

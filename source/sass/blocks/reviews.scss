@@ -25,13 +25,13 @@
 //   position: relative;
 // }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .reviews__button {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .reviews__wrapper {
     padding: 60px 45px;
     min-height: 451px;
@@ -119,7 +119,7 @@
   }
 }
 
-@media (min-width: 1366px) {
+@media (width >= 1366px) {
   .reviews__wrapper {
     padding: 100px 103px;
     display: flex;

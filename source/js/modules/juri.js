@@ -1,25 +1,15 @@
-import Swiper from 'swiper';
+import {Swiper as SwiperJuri} from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import '../../sass/vendor/swiper.css';
 
 const initSwiper = () => {
-  const container = document.querySelector('.swiper');
-  if (!container) {
-    return () => { };
-  }
-
-  let swiper1;
-
   document.addEventListener('DOMContentLoaded', () => {
-    swiper1 = new Swiper(container, {
+    new SwiperJuri('.swiper', {
       loop: true,
-      loopAdditionalSlides: 2,
       loopSlides: 8,
-      normalizeSlideIndex: true,
-      watchSlidesProgress: false,
-      slideToClickedSlide: false,
-      slidesPerView: 1,
+      normalizeSlideIndex: false,
       spaceBetween: 0,
+      resize: true,
       modules: [Navigation, Pagination],
       navigation: {
         nextEl: '.juri__button--next',
@@ -27,6 +17,7 @@ const initSwiper = () => {
       },
       breakpoints: {
         320: {
+          slidesPerView: 1,
           allowTouchMove: true,
         },
         768: {

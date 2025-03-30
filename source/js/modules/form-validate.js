@@ -11,7 +11,9 @@ const FIELDS = {
 
 const initFormValidation = () => {
   const form = document.querySelector('.form');
-  if (!form) return;
+  if (!form) {
+    return;
+  }
 
   const createErrorElement = (input, message) => {
     let errorElement = input.parentNode.querySelector('.error-message');
@@ -27,9 +29,11 @@ const initFormValidation = () => {
     return errorElement;
   };
 
-  Object.keys(FIELDS).forEach(name => {
+  Object.keys(FIELDS).forEach((name) => {
     const input = form.querySelector(`[name="${name}"]`);
-    if (!input) return;
+    if (!input) {
+      return;
+    }
 
     const { pattern, errorMessage } = FIELDS[name];
     const errorElement = createErrorElement(input, errorMessage);
@@ -56,7 +60,7 @@ const initFormValidation = () => {
 
   form.addEventListener('submit', (evt) => {
     let isFormValid = true;
-    Object.keys(FIELDS).forEach(name => {
+    Object.keys(FIELDS).forEach((name) => {
       const input = form.querySelector(`[name="${name}"]`);
       const { pattern } = FIELDS[name];
       const isValid = pattern.test(input.value);

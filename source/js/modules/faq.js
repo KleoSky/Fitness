@@ -1,9 +1,7 @@
-// Функционал переключения табов
 const buttons = document.querySelectorAll('.faq__tab-button');
 const infoLists = document.querySelectorAll('.faq__info-list');
 const tabItems = document.querySelectorAll('.faq__tab-item');
 
-// Функция переключения табов
 const switchFaqTab = (rel) => {
   buttons.forEach((button) => {
     const isCurrent = button.getAttribute('rel') === rel;
@@ -33,9 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
   switchFaqTab('tab4');
 });
 
-// Функционал аккордеона
 const initAccordions = () => {
   const state = new Map();
+
+  const saveState = () => {
+    const toSave = Array.from(state.entries());
+    localStorage.setItem('accordionState', JSON.stringify(toSave));
+  };
 
   const setDefaultState = () => {
     const defaultItem = document.querySelector('.faq__info-item[rel="tab8"]');
@@ -51,6 +53,8 @@ const initAccordions = () => {
       saveState();
     }
   };
+
+  setDefaultState();
 
   const loadState = () => {
     try {
@@ -73,7 +77,6 @@ const initAccordions = () => {
     return null;
   };
 
-  // Инициализация
   const initialize = () => {
     const loadedState = loadState();
 
@@ -91,16 +94,11 @@ const initAccordions = () => {
         handleAccordionClick(button.closest('.faq__info-item'));
       }
     });
-      applyStateToDOM();
+    applyStateToDOM();
   };
 
-  const saveState = () => {
-    const toSave = Array.from(state.entries());
-    localStorage.setItem('accordionState', JSON.stringify(toSave));
-  };
-
-  const applyStateToDOM = () => {
-    document.querySelectorAll('.faq__info-item').forEach(item => {
+  function applyStateToDOM () {
+    document.querySelectorAll('.faq__info-item').forEach((item) => {
       const tabId = item.closest('.faq__info-list').getAttribute('rel');
       const itemId = item.getAttribute('rel');
       const isOpen = state.get(tabId)?.has(itemId) || false;
@@ -117,11 +115,9 @@ const initAccordions = () => {
         content.style.height = '0';
       }
     });
-  };
+  }
 
-  setDefaultState();
-
-  const handleAccordionClick = (item) => {
+  function handleAccordionClick (item) {
     const tabId = item.closest('.faq__info-list').getAttribute('rel');
     const itemId = item.getAttribute('rel');
 
@@ -139,7 +135,7 @@ const initAccordions = () => {
 
     saveState();
     applyStateToDOM();
-  };
+  }
 
   initialize();
 };

@@ -28,7 +28,6 @@
 }
 
 .features__item:not(:nth-child(3)) {
-
   display: grid;
   grid-template-rows: repeat(3, min-content);
 }

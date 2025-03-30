@@ -50,7 +50,7 @@
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .nav {
     display: flex;
     flex-wrap: wrap;
@@ -75,7 +75,7 @@
   }
 }
 
-@media (min-width: 1366px) {
+@media (width >= 1366px) {
   .nav {
     column-gap: 167px;
   }

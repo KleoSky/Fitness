@@ -40,7 +40,7 @@
   border-radius: 50%;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .review {
     width: 500px;
     margin: 0 auto;
@@ -86,7 +86,7 @@
   }
 }
 
-@media (min-width: 1366px) {
+@media (width >= 1366px) {
   .review {
     width: 560px;
     padding: 60px 60px 52px;

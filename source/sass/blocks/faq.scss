@@ -169,7 +169,7 @@
 .faq__button:active:not(:disabled)::before,
 .faq__button--current::after,
 .faq__button:active:not(:disabled)::after,
-.faq__button:hover:not(:disabled):before,
+.faq__button:hover:not(:disabled)::before,
 .faq__button:hover:not(:disabled)::after,
 .faq__button:focus::before,
 .faq__button:focus::after,
@@ -192,7 +192,7 @@
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .faq__wrapper {
     padding: 60px 45px;
   }
@@ -227,7 +227,7 @@
 
   .faq__info-item h3 {
     font-size: 22px;
-    margin: 33px 0 19px 0;
+    margin: 33px 0 19px;
   }
 
   .faq__info-item p {
@@ -250,17 +250,21 @@
   }
 }
 
-@media (min-width: 321px) and (max-width: 1365px){
-  .faq__info-item:not(.faq__info-item--current, .faq__info-item:last-child) {
+@media (width >= 321px) and (width <= 1365px) {
+  .faq__info-item:not(.faq__info-item--current) {
     padding-bottom: 13px;
   }
 
   .faq__info-item:last-child h3 {
     margin: 22px 0;
   }
+
+  .faq__info-item:last-child {
+    padding-bottom: 0;
+  }
 }
 
-@media (min-width: 1366px) {
+@media (width >= 1366px) {
   .faq__wrapper {
     padding: 100px 103px;
     display: flex;
@@ -310,7 +314,7 @@
 
   .faq__info-item h3 {
     font-size: 24px;
-    margin: 31px 0 30px 0;
+    margin: 31px 0 30px;
   }
 
   .faq__button {

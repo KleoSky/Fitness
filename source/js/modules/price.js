@@ -2,7 +2,6 @@ const buttons = document.querySelectorAll('.price__button');
 const infoItems = document.querySelectorAll('.price__info-item');
 const tabItems = document.querySelectorAll('.price__tab-item');
 
-// Функция для переключения табов
 const switchTab = (rel) => {
   buttons.forEach((button) => {
     button.classList.remove('price__button--current');

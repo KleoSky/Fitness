@@ -5,13 +5,13 @@
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .main-title {
     font-size: 42px;
   }
 }
 
-@media (min-width: 1366px) {
+@media (width >= 1366px) {
   .main-title {
     font-size: 54px;
   }

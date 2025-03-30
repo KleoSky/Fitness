@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .second-title {
     font-size: 54px;
   }

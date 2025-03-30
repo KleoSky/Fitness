@@ -1,5 +1,5 @@
 .member {
-  min-width: 260px;
+  width: 100%;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
 }
 
 .member__info {
-  width: 260px;
+  min-width: 100%;
   min-height: 100%;
   color: var(--color-second, #ffffff);
   background-color: rgba(16, 38, 84, 0.89);
