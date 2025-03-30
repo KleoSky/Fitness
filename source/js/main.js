@@ -11,8 +11,11 @@ import { switchFaqTab, initAccordions } from './modules/faq';
 switchFaqTab();
 initAccordions();
 
+import { initFormValidation } from './modules/form-validate';
+initFormValidation();
+
+import { initVideo } from './modules/video';
+initVideo();
+
 // import { initSwiperReviews } from './modules/reviews';
 // initSwiperReviews();
-
-// import { initSwipers } from './modules/swiper';
-// initSwipers();

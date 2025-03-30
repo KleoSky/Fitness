@@ -12,14 +12,17 @@
 
 .nav__item {
   line-height: 1;
+  box-sizing: border-box;
 
   &:has(a:not(.nav__link-disabled)):hover {
     border-bottom: 1px solid var(--bg-base, #ffffff);
+    margin-bottom: -1px;
   }
 
   &:has(a:not(.nav__link-disabled)):focus,
   &:has(a:not(.nav__link-disabled)):focus-visible {
     border: 1px solid var(--bg-base, #ffffff);
+    margin-bottom: -1px;
   }
 }
 

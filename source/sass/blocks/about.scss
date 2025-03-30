@@ -1,4 +1,5 @@
 .about {
+  min-height: 812px;
   background-color: var(--bg-base, #ffffff);
 }
 
@@ -166,6 +167,7 @@
 
 @media (width >= 768px) {
   .about {
+    min-height: 574px;
     position: relative;
   }
 
@@ -233,6 +235,10 @@
 }
 
 @media (width >= 1366px) {
+  .about {
+    min-height: 760px;
+  }
+
   .about__wrapper {
     padding: 120px 103px 244px;
     display: flex;

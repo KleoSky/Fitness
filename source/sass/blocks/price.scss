@@ -31,11 +31,14 @@
   flex-wrap: wrap;
   gap: 45px;
   margin-bottom: 28px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .price__tab-item {
   line-height: 1;
   margin-right: 0.5px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0);
 }
 
 .price__tab-item:has(button:not(.price__button--current):not(:disabled)):hover {
@@ -174,6 +177,7 @@
 
   .price__cards-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
   }
 }

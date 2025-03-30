@@ -36,9 +36,16 @@
     border-bottom: 1px solid #ff121f;
   }
 
-  &:focus:invalid {
+  &.invalid {
     border-bottom: 1px solid #ff121f;
   }
+
+  // &.error-massage {
+  //   color: #ff121f;
+  //   font-size: 12px;
+  //   margin-top: 4px;
+  //   display: none;
+  // }
 }
 
 .form__button {

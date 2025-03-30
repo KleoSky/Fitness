@@ -14,7 +14,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 40px min-content min-content 40px;
-  grid-template-rows: 40px min-content auto 60px 40px min-content;
+  grid-template-rows: 40px min-content auto auto 40px min-content;
 }
 
 .games__title {
@@ -49,7 +49,7 @@
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 22px;
   background-color: transparent;
   border: 2px solid var(--color-second, #ffffff);
   box-sizing: border-box;
@@ -161,7 +161,7 @@
     min-width: 678px;
     display: grid;
     grid-template-columns: 40px min-content min-content 40px min-content;
-    grid-template-rows: 40px min-content auto 66px 40px;
+    grid-template-rows: 40px min-content auto auto 40px;
   }
 
   .games__title {
@@ -175,7 +175,7 @@
   }
 
   .games__button {
-    padding: 22px;
+    padding: 25px;
   }
 
   .games__picture {
@@ -230,7 +230,7 @@
     min-width: 1160px;
     display: grid;
     grid-template-columns: 80px min-content min-content 80px min-content;
-    grid-template-rows: 60px min-content auto 66px 98px;
+    grid-template-rows: 60px min-content auto auto 98px;
   }
 
   .games__title {

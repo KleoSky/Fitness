@@ -78,7 +78,7 @@
       content: "";
       display: block;
       width: 1px;
-      height: 117px;
+      height: 100%;
       background-color: #74819c;
       position: absolute;
       top: 0;
@@ -113,10 +113,12 @@
   }
 
   .contacts__subtitle {
+    max-width: 190px;
     font-size: 24px;
   }
 
   .contacts__info {
+    max-width: 190px;
     line-height: inherit;
   }
 }

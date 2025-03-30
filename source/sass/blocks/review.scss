@@ -20,15 +20,18 @@
 }
 
 .review blockquote {
+  max-height: 154px;
   text-align: center;
   margin: 8px 0;
   grid-row: 3 / 4;
+  overflow-y: auto;
 }
 
 .review__picture {
   line-height: 0.5;
   justify-self: center;
   grid-row: 1 / 2;
+  margin-bottom: 1px;
 }
 
 .review__picture img {
@@ -63,6 +66,7 @@
   }
 
   .review blockquote {
+    max-height: 120px;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
@@ -87,5 +91,10 @@
     width: 560px;
     padding: 60px 60px 52px;
     column-gap: 30px;
+  }
+
+  .review blockquote {
+    width: 350px;
+    max-height: 97px;
   }
 }
