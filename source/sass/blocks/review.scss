@@ -3,9 +3,7 @@
   padding: 30px 25px 22px;
   background-color: var(--bg-third, #000080);
   box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
-  display: grid;
-  grid-template-rows: repeat(3, min-content);
-  position: absolute;
+  box-sizing: border-box;
 }
 
 .review h3 {
@@ -46,9 +44,6 @@
     margin: 0 auto;
     padding: 40px 30px 32px;
     background-color: var(--bg-third, #000080);
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: repeat(2, min-content);
-    column-gap: 40px;
     box-sizing: border-box;
     min-height: 242px;
     left: 50%;
