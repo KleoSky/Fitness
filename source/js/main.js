@@ -17,5 +17,5 @@ initFormValidation();
 import { initVideo } from './modules/video';
 initVideo();
 
-// import { initSwiperReviews } from './modules/reviews';
-// initSwiperReviews();
+import { initSwiperReviews } from './modules/reviews';
+initSwiperReviews();

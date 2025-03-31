@@ -4,7 +4,7 @@ import '../../sass/vendor/swiper.css';
 
 const initSwiper = () => {
   document.addEventListener('DOMContentLoaded', () => {
-    new SwiperJuri('.swiper', {
+    new SwiperJuri('.juri__swiper', {
       loop: true,
       loopSlides: 8,
       normalizeSlideIndex: false,

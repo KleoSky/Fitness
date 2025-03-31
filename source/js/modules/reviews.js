@@ -1,18 +1,13 @@
-import Swiper from 'swiper';
+import {Swiper as SwiperReviews} from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import '../../sass/vendor/swiper.css';
 
 const initSwiperReviews = () => {
-  const container = document.querySelector('.swiper');
-  if (!container) {
-    return () => { };
-  }
-
-  let swiper;
-
   document.addEventListener('DOMContentLoaded', () => {
-    swiper = new Swiper(container, {
+    new SwiperReviews('.reviews__swiper', {
       slidesPerView: 1,
+      slidesPerGroup: 1,
+      centeredSlides: true,
       spaceBetween: 0,
       allowTouchMove: true,
       modules: [Navigation, Pagination],
@@ -38,9 +33,6 @@ const initSwiperReviews = () => {
     function updateButtonStates(swiperInstance) {
       const prevButton = document.querySelector('.reviews__button--prev');
       const nextButton = document.querySelector('.reviews__button--next');
-
-      prevButton.disabled = true;
-      nextButton.disabled = true;
 
       if (swiperInstance.isBeginning && !swiperInstance.params.loop) {
         prevButton.classList.add('disabled');
