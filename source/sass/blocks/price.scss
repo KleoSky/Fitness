@@ -52,6 +52,7 @@
   padding: 0;
   padding-bottom: 8px;
   box-sizing: border-box;
+  cursor: pointer;
 
   &:hover:not(.price__button--current):not(:disabled) {
     color: rgba(16, 38, 84, 0.7);
@@ -85,6 +86,7 @@
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
   text-underline-position: under;
+  cursor: default;
 }
 
 .price__info-item--hidden {
