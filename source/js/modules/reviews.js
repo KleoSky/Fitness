@@ -49,8 +49,8 @@ const initSwiperReviews = () => {
   });
 
   return () => {
-    if (swiper) {
-      swiper.destroy();
+    if (SwiperReviews) {
+      SwiperReviews.destroy();
     }
 
   };
