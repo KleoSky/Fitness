@@ -4,90 +4,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUPERGYM</title>
-  <script type="module" crossorigin src="./assets/index-BEp2zIYC.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-rnN3JI3F.css">
+  <title>SUPERGYM</title>
+  <link rel="preload" href="./assets/roboto-condensed-light-BV5NaeqS.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="./assets/roboto-condensed-regular-4XC1SB2o.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="./assets/roboto-condensed-bold-PBm6KHpv.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="./assets/alumni-sans-semi-bold-BTlNx0Oq.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="./assets/alumni-sans-extra-bold-D4O8tc8w.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="icon" href="./assets/favicon-DjKtdZh4.ico">
+  <link rel="icon" sizes="32x32" href="./assets/32-DvpiB3zb.png" type="image/png">
+  <link rel="icon" href="public/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/apple-BMc35qf-.png">
+  <link rel="manifest" href="./assets/manifest-aR5LKZsX.webmanifest">
+  <script type="module" crossorigin src="./assets/index-Z66SB_XD.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-6XSx0BT0.css">
 </head>
 
-<body class="body" style="background-color: dimgray;">
-  <!-- <svg>
-      <use href="/assets/spritemap.c076426c.svg#sprite-user"></use>
-    </svg> -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
+<body class="body">
   <div class="body__wrapper container">
-    <header class="hero__header header" data-test="hero">
-      <div class="header__main">
-        <img src="/assets/spritemap.c076426c.svg#sprite-logo-view" width="100" height="20" alt="Логотип сайта SUPERGYM">
-        <a class="header__link" href="tel:8-800-555-55-55">8 800 555-55-55</a>
-      </div>
-      <section class="hero__content">
-        <h1 class="hero__title">Фитнес центр</h1>
-        <p class="hero__location">Омск</p>
-        <ul class="hero__description-list">
-          <li class="hero__description-item">Тренажёрный</li>
-          <li class="hero__description-item">Групповые занятия</li>
-          <li class="hero__description-item">Кардио-зона</li>
-        </ul>
-        <button class="hero__button" type="button">Купить абонемент</button>
-        <div class="hero__picture">
-          <picture>
-            <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
-              srcset="./assets/hero-img-desktop@1x-6Lklgkip.webp 1x, ./assets/hero-img-desktop@2x-BDli7EGN.webp 2x">
-            <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
-              srcset="./assets/hero-img-tablet@1x-BJ_Dk7SL.webp 1x, ./assets/hero-img-tablet@2x-CKhLgvO2.webp 2x">
-            <source media="(min-width: 1336px)" width="500" height="524" type="image/jpeg"
-              srcset="./assets/hero-img-desktop@1x-B2UQABeZ.jpg 1x, ./assets/hero-img-desktop@2x-teseIwxz.jpg 2x">
-            <img src="./assets/hero-img-tablet@1x-CclZ6dka.jpg" srcset="./assets/hero-img-tablet@2x-BYPHv3jh.jpg 2x" width="324" height="390"
-              alt="Тренер фитнесс-зала">
-          </picture>
+    <header class="body__header header" data-test="hero">
+      <div class="header__wrapper">
+        <div class="header__main">
+          <img class="header__logo" src="./assets/logo-fsUHN7Ex.svg" width="100" height="20" alt="Логотип сайта SUPERGYM">
+          <a class="header__link" href="tel:8-800-555-55-55">8 800 555-55-55</a>
         </div>
-      </section>
+        <section class="header__hero hero">
+          <h1 class="hero__title">Фитнес центр</h1>
+          <p class="hero__location">Омск</p>
+          <ul class="hero__description-list">
+            <li class="hero__description-item">Тренажёрный зал</li>
+            <li class="hero__description-item">Групповые&nbsp;занятия</li>
+            <li class="hero__description-item">Кардио-зона</li>
+          </ul>
+          <button class="hero__button" type="button">Купить абонемент</button>
+          <div class="hero__picture">
+            <picture>
+              <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
+                srcset="./assets/hero-img-desktop@1x-6Lklgkip.webp 1x, ./assets/hero-img-desktop@2x-BDli7EGN.webp 2x">
+              <source media="(min-width: 768px)" width="324" height="390" type="image/webp"
+                srcset="./assets/hero-img-tablet@1x-BJ_Dk7SL.webp 1x, ./assets/hero-img-tablet@2x-CKhLgvO2.webp 2x">
+              <source media="(min-width: 1336px)" width="500" height="524" type="image/jpeg"
+                srcset="./assets/hero-img-desktop@1x-B2UQABeZ.jpg 1x, ./assets/hero-img-desktop@2x-teseIwxz.jpg 2x">
+              <img src="./assets/hero-img-tablet@1x-CclZ6dka.jpg" srcset="./assets/hero-img-tablet@2x-BYPHv3jh.jpg 2x" width="324" height="390"
+                alt="Тренер фитнесс-зала">
+            </picture>
+          </div>
+        </section>
+      </div>
     </header>
     <main class="body__main main">
       <section class="main__about about" data-test="about">
-        <h2 class="about__title">Тренажёрный зал</h2>
-        <h3 class="about__description">Просторный зал площадью 900 кв/м</h3>
-        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
-          зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
-        <span>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
-          есть несколько оборудованных залов для различных видов групповых занятий.</span>
-        <div class="about__picture">
-          <picture>
-            <source media="(min-width: 1366px)" width="660" height="400" type="image/webp"
-              srcset="./assets/main-img-desktop@1x-CpbEvYXZ.webp 1x, ./assets/main-img-desktop@2x-BapjWkZ_.webp 2x">
-            <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
-              srcset="./assets/main-img-tablet@1x-CDg6C2HD.webp 1x, ./assets/main-img-tablet@2x-nwd-yyvH.webp 2x">
-            <source width="320" height="280" type="image/webp"
-              srcset="./assets/main-img-mobile@1x-BiTQRGb6.webp 1x, ./assets/main-img-mobile@2x-B1cMDzHp.webp 2x">
-            <source media="(min-width: 1336px)" width="660" height="400" type="image/jpeg"
-              srcset="./assets/main-img-desktop@1x-52ZaO2bs.jpg 1x, ./assets/main-img-desktop@2x-C6voAErF.jpg 2x">
-            <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
-              srcset="./assets/main-img-tablet@1x-CzKHtF5_.jpg 1x, ./assets/main-img-tablet@2x-GonfErP_.jpg 2x">
-            <img src="./assets/main-img-mobile@1x-Vrqp0q-S.jpg" srcset="./assets/main-img-mobile@2x-KWF87yHl.jpg 2x" width="320" height="280"
-              alt="Просторный тренажёрный зал">
-          </picture>
-        </div>
-        <div class="hero__video">
-          <iframe src="https://rutube.ru/video/0962cc6a02f003e300a237078ab7a229/" width="320" height="170"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="Демонстрация обстановки тренажёрного зала">
-          </iframe>
-          <button class="hero__play-button" type="button">
-            <span class="visually-hidden">Запустить просмотр видео</span>
-          </button>
+        <div class="about__wrapper wrapper">
+          <div class="about__info">
+            <h2 class="about__title main-title">Тренажёрный зал</h2>
+            <h3 class="about__description">Просторный зал площадью 900 кв/м</h3>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажёрный
+              зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+            <span>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
+              есть несколько оборудованных залов для различных видов групповых занятий.</span>
+          </div>
+          <div class="about__picture">
+            <picture>
+              <source media="(min-width: 1366px)" width="660" height="400" type="image/webp"
+                srcset="./assets/main-img-desktop@1x-CpbEvYXZ.webp 1x, ./assets/main-img-desktop@2x-BapjWkZ_.webp 2x">
+              <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
+                srcset="./assets/main-img-tablet@1x-CDg6C2HD.webp 1x, ./assets/main-img-tablet@2x-nwd-yyvH.webp 2x">
+              <source width="320" height="280" type="image/webp"
+                srcset="./assets/main-img-mobile@1x-BiTQRGb6.webp 1x, ./assets/main-img-mobile@2x-B1cMDzHp.webp 2x">
+              <source media="(min-width: 1336px)" width="660" height="400" type="image/jpeg"
+                srcset="./assets/main-img-desktop@1x-52ZaO2bs.jpg 1x, ./assets/main-img-desktop@2x-C6voAErF.jpg 2x">
+              <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
+                srcset="./assets/main-img-tablet@1x-CzKHtF5_.jpg 1x, ./assets/main-img-tablet@2x-GonfErP_.jpg 2x">
+              <img src="./assets/main-img-mobile@1x-Vrqp0q-S.jpg" srcset="./assets/main-img-mobile@2x-KWF87yHl.jpg 2x" width="320" height="280"
+                alt="Просторный тренажёрный зал">
+            </picture>
+          </div>
+          <div class="about__video-wrapper">
+            <div class="about__video">
+              <picture>
+                <source media="(min-width: 1366px)" width="360" height="320" type="image/webp"
+                  srcset="./assets/video-preview-desktop@1x-0ot9XVno.webp 1x, ./assets/video-preview-desktop@2x-CM9oOc2K.webp 2x">
+                <source media="(min-width: 768px)" width="270" height="170" type="image/webp"
+                  srcset="./assets/video-preview-tablet@1x-93tyA6bH.webp 1x, ./assets/video-preview-tablet@2x-BoOYOgc0.webp 2x">
+                <source width="320" height="170" type="image/webp"
+                  srcset="./assets/video-preview-mobile@1x-B4Uch3G9.webp 1x, ./assets/video-preview-mobile@2x-D9OgZIjQ.webp 2x">
+                <source media="(min-width: 1336px)" width="360" height="320" type="image/jpeg"
+                  srcset="./assets/video-preview-desktop@1x-BBUVswz3.jpg 1x, ./assets/video-preview-desktop@2x-BjnJ5u78.jpg 2x">
+                <source media="(min-width: 768px)" width="270" height="170" type="image/jpeg"
+                  srcset="./assets/video-preview-tablet@1x-CIo1IGVM.jpg 1x, ./assets/video-preview-tablet@2x-DXvqLV31.jpg 2x">
+                <img src="./assets/video-preview-mobile@1x-DNSQK0jt.jpg" srcset="./assets/video-preview-mobile@2x-O1D-nT_R.jpg 2x" width="320"
+                  height="170" alt="Просторный тренажёрный зал">
+              </picture>
+              <button class="about__play-button" type="button">
+                <span class="visually-hidden">Запустить просмотр видео</span>
+              </button>
+            </div>
+            <div class="about__iframe-container"></div>
+          </div>
         </div>
       </section>
       <section class="main__price price" data-test="price">
-        <h2 class="price__title">Абонементы</h2>
+        <h2 class="price__title main-title">Абонементы</h2>
         <div class="price__filter">
           <ul class="price__tab-list">
-            <li class="price__tab-item">
-              <button class="price__button" type="button" rel="tab1">1 месяц</button>
+            <li class="price__tab-item price__tab-item--current" rel="tab1">
+              <button class="price__button price__button--current" type="button" rel="tab1">1 месяц</button>
             </li>
-            <li class="price__tab-item">
+            <li class="price__tab-item" rel="tab2">
               <button class="price__button" type="button" rel="tab2">6 месяцев</button>
             </li>
-            <li class="price__tab-item">
+            <li class="price__tab-item" rel="tab3">
               <button class="price__button" type="button" rel="tab3">12 месяцев</button>
             </li>
           </ul>
@@ -97,81 +128,99 @@
                 <li class="price__card card">
                   <h3 class="card__title">С тренером</h3>
                   <p class="card__description">12 занятий</p>
-                  <p class="card__price">5000</p>
-                  <span class="card__price-transparent" aria-hidden="true">5000</span>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <div class="card__price-wrapper">
+                    <p class="card__price">5000</p>
+                    <span class="card__price-transparent" aria-hidden="true">5000</span>
+                  </div>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Дневной</h3>
                   <p class="card__description">с 8:00 до 17:00</p>
-                  <p class="card__price">1700</p>
-                  <span class="card__price-transparent" aria-hidden="true">1700</span>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <div class="card__price-wrapper">
+                    <p class="card__price">1700</p>
+                    <span class="card__price-transparent" aria-hidden="true">1700</span>
+                  </div>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Полный день</h3>
                   <p class="card__description">с 8:00 до 22:00</p>
-                  <p class="card__price">2700</p>
-                  <span class="card__price-transparent" aria-hidden="true">2700</span>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <div class="card__price-wrapper">
+                    <p class="card__price">2700</p>
+                    <span class="card__price-transparent" aria-hidden="true">2700</span>
+                  </div>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
               </ul>
             </li>
-            <li class="price__info-item" rel="tab2">
+            <li class="price__info-item price__info-item--hidden" rel="tab2">
               <ul class="price__cards-list">
                 <li class="price__card card">
                   <h3 class="card__title">С тренером</h3>
                   <p class="card__description">12 занятий</p>
-                  <p class="card__price">30000</p>
-                  <span class="card__price-transparent" aria-hidden="true">30000</span>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <div class="card__price-wrapper">
+                    <p class="card__price">30000</p>
+                    <span class="card__price-transparent" aria-hidden="true">30000</span>
+                  </div>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Дневной</h3>
                   <p class="card__description">с 8:00 до 17:00</p>
-                  <p class="card__price">10200</p>
-                  <span class="card__price-transparent" aria-hidden="true">10200</span>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <div class="card__price-wrapper">
+                    <p class="card__price">10200</p>
+                    <span class="card__price-transparent" aria-hidden="true">10200</span>
+                  </div>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Полный день</h3>
                   <p class="card__description">с 8:00 до 22:00</p>
-                  <p class="card__price">16200</p>
-                  <span class="card__price-transparent" aria-hidden="true">16200</span>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <div class="card__price-wrapper">
+                    <p class="card__price">16200</p>
+                    <span class="card__price-transparent" aria-hidden="true">16200</span>
+                  </div>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
               </ul>
             </li>
-            <li class="price__info-item" rel="tab3">
+            <li class="price__info-item price__info-item--hidden" rel="tab3">
               <ul class="price__cards-list">
                 <li class="price__card card">
                   <h3 class="card__title">С тренером</h3>
                   <p class="card__description">12 занятий</p>
-                  <p class="card__price">60000</p>
-                  <span class="card__price-transparent" aria-hidden="true">60000</span>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <div class="card__price-wrapper">
+                    <p class="card__price">60000</p>
+                    <span class="card__price-transparent" aria-hidden="true">60000</span>
+                  </div>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Дневной</h3>
                   <p class="card__description">с 8:00 до 17:00</p>
-                  <p class="card__price">20400</p>
-                  <span class="card__price-transparent" aria-hidden="true">20400</span>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <div class="card__price-wrapper">
+                    <p class="card__price">20400</p>
+                    <span class="card__price-transparent" aria-hidden="true">20400</span>
+                  </div>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
                 <li class="price__card card">
                   <h3 class="card__title">Полный день</h3>
                   <p class="card__description">с 8:00 до 22:00</p>
-                  <p class="card__price">32400</p>
-                  <span class="card__price-transparent" aria-hidden="true">32400</span>
-                  <a class="card__link" href="#">Купить абонемент</a>
+                  <div class="card__price-wrapper">
+                    <p class="card__price">32400</p>
+                    <span class="card__price-transparent" aria-hidden="true">32400</span>
+                  </div>
+                  <button class="card__button" type="button">Купить абонемент</button>
                 </li>
               </ul>
             </li>
           </ul>
         </div>
       </section>
-      <div class="main__games games">
-        <section class="main__games games" data-test="games">
+      <section class="main__games games" data-test="games">
+        <div class="games__wrapper">
           <h2 class="games__title">Super Games</h2>
           <div class="games__datetime">
             <div class="games__date">
@@ -186,7 +235,7 @@
             </div>
           </div>
           <p class="games__description">Ежегодные соревнования по CrossFit</p>
-          <a class="games__link" href="#">Заполнить заявку</a>
+          <button class="games__button" type="button">Заполнить заявку</button>
           <div class="games__picture">
             <picture>
               <source media="(min-width: 1366px)" width="660" height="500" type="image/webp"
@@ -203,492 +252,567 @@
                 alt="Мужчина во время тренировки">
             </picture>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="main__juri juri" data-test="juri">
-        <h2 class="juri__title">Жюри</h2>
-        <ul class="juri__list">
-          <li class="juri__item member" tabindex="0">
-            <h3 class="member__title">Анна Павлова</h3>
-            <div class="member__pictute">
-              <picture>
-                <source width="260" height="300" type="image/webp"
-                  srcset="./assets/juri-1@1x-R7OSmaUW.webp 1x, ./assets/juri-1@2x-DuW7tHI9.webp 2x">
-                <img src="./assets/juri-1@1x-Dy-1s_KW.jpg" srcset="./assets/juri-1@2x-BcrEDZfs.jpg 2x" width="260" height="300" alt="Член жюри">
-              </picture>
-            </div>
-            <div class="member__info">
-              <h4 class="member__name">Анна Павлова</h4>
-              <h5 class="member__direction">BodyFlex</h5>
-              <ul class="member__features">
-                <li class="member__feature">Certified Level 3 Trainer</li>
-                <li class="member__feature">Проводит марафоны красоты</li>
-                <li class="member__feature">Опыт — 6 лет</li>
-              </ul>
-            </div>
-          </li>
-          <li class="juri__item member" tabindex="0">
-            <h3 class="member__title">Алексей Лавров</h3>
-            <div class="member__pictute">
-              <picture>
-                <source width="260" height="300" type="image/webp"
-                  srcset="data:image/webp;base64,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 1x, ./assets/juri-2@2x-Cy2b-zXx.webp 2x">
-                <img src="./assets/juri-2@1x-By52E88I.jpg" srcset="./assets/juri-2@2x-C5o0Qg22.jpg 2x" width="260" height="300" alt="Член жюри">
-              </picture>
-            </div>
-            <div class="member__info">
-              <h4 class="member__name">Алексей Лавров</h4>
-              <h5 class="member__direction">X-Functional</h5>
-              <ul class="member__features">
-                <li class="member__feature">Certified Level 4 Trainer</li>
-                <li class="member__feature">Победитель Всероссийских соревнований "Кубок 800"</li>
-                <li class="member__feature">Опыт — 7 лет</li>
-              </ul>
-            </div>
-          </li>
-          <li class="juri__item member" tabindex="0">
-            <h3 class="member__title">Александр Пашков</h3>
-            <div class="member__pictute">
-              <picture>
-                <source width="260" height="300" type="image/webp"
-                  srcset="./assets/juri-3@1x-C2dZQBEE.webp 1x, ./assets/juri-3@2x-BbCEgtdJ.webp 2x">
-                <img src="./assets/juri-3@1x-DPXpmk6p.jpg" srcset="./assets/juri-3@2x-D6_VW7AZ.jpg 2x" width="260" height="300" alt="Член жюри">
-              </picture>
-            </div>
-            <div class="member__info">
-              <h4 class="member__name">Александр Пашков</h4>
-              <h5 class="member__direction">CrossFit</h5>
-              <ul class="member__features">
-                <li class="member__feature">Certified Level 3 Trainer</li>
-                <li class="member__feature">Победитель чемпионата России по CrossFit</li>
-                <li class="member__feature">Опыт — 6 лет</li>
-              </ul>
-            </div>
-          </li>
-          <li class="juri__item member" tabindex="0">
-            <h3 class="member__title">Мария Кетова</h3>
-            <div class="member__pictute">
-              <picture>
-                <source width="260" height="300" type="image/webp"
-                  srcset="./assets/juri-4@1x-O8gRRBp4.webp 1x, ./assets/juri-4@2x-DTswLI8j.webp 2x">
-                <img src="./assets/juri-4@1x-D8MuNF7t.jpg" srcset="./assets/juri-4@2x-Pss5reot.jpg 2x" width="260" height="300" alt="Член жюри">
-              </picture>
-            </div>
-            <div class="member__info">
-              <h4 class="member__name">Мария Кетова</h4>
-              <h5 class="member__direction">Stretching</h5>
-              <ul class="member__features">
-                <li class="member__feature">Certified Level 3 Trainer</li>
-                <li class="member__feature">Знание анатомии и физиологии человека</li>
-                <li class="member__feature">Опыт — 6 лет</li>
-              </ul>
-            </div>
-          </li>
-          <li class="juri__item member" tabindex="0">
-            <h3 class="member__title">Анна Павлова</h3>
-            <div class="member__pictute">
-              <picture>
-                <source width="260" height="300" type="image/webp"
-                  srcset="./assets/juri-1@1x-R7OSmaUW.webp 1x, ./assets/juri-1@2x-DuW7tHI9.webp 2x">
-                <img src="./assets/juri-1@1x-Dy-1s_KW.jpg" srcset="./assets/juri-1@2x-BcrEDZfs.jpg 2x" width="260" height="300" alt="Член жюри">
-              </picture>
-            </div>
-            <div class="member__info">
-              <h4 class="member__name">Анна Павлова</h4>
-              <h5 class="member__direction">BodyFlex</h5>
-              <ul class="member__features">
-                <li class="member__feature">Certified Level 2 Trainer</li>
-                <li class="member__feature">Проводит марафоны красоты</li>
-                <li class="member__feature">Опыт — 3 года</li>
-              </ul>
-            </div>
-          </li>
-          <li class="juri__item member" tabindex="0">
-            <h3 class="member__title">Алексей Лавров</h3>
-            <div class="member__pictute">
-              <picture>
-                <source width="260" height="300" type="image/webp"
-                  srcset="data:image/webp;base64,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 1x, ./assets/juri-2@2x-Cy2b-zXx.webp 2x">
-                <img src="./assets/juri-2@1x-By52E88I.jpg" srcset="./assets/juri-2@2x-C5o0Qg22.jpg 2x" width="260" height="300" alt="Член жюри">
-              </picture>
-            </div>
-            <div class="member__info">
-              <h4 class="member__name">Алексей Лавров</h4>
-              <h5 class="member__direction">X-Functional</h5>
-              <ul class="member__features">
-                <li class="member__feature">Certified Level 4 Trainer</li>
-                <li class="member__feature">Победитель Всероссийских соревнований "Кубок 800"</li>
-                <li class="member__feature">Опыт — 7 лет</li>
-              </ul>
-            </div>
-          </li>
-          <li class="juri__item member" tabindex="0">
-            <h3 class="member__title">Александр Пашков</h3>
-            <div class="member__pictute">
-              <picture>
-                <source width="260" height="300" type="image/webp"
-                  srcset="./assets/juri-3@1x-C2dZQBEE.webp 1x, ./assets/juri-3@2x-BbCEgtdJ.webp 2x">
-                <img src="./assets/juri-3@1x-DPXpmk6p.jpg" srcset="./assets/juri-3@2x-D6_VW7AZ.jpg 2x" width="260" height="300" alt="Член жюри">
-              </picture>
-            </div>
-            <div class="member__info">
-              <h4 class="member__name">Александр Пашков</h4>
-              <h5 class="member__direction">CrossFit</h5>
-              <ul class="member__features">
-                <li class="member__feature">Certified Level 3 Trainer</li>
-                <li class="member__feature">Победитель чемпионата России по CrossFit</li>
-                <li class="member__feature">Опыт — 6 лет</li>
-              </ul>
-            </div>
-          </li>
-          <li class="juri__item member" tabindex="0">
-            <h3 class="member__title">Мария Кетова</h3>
-            <div class="member__pictute">
-              <picture>
-                <source width="260" height="300" type="image/webp"
-                  srcset="./assets/juri-4@1x-O8gRRBp4.webp 1x, ./assets/juri-4@2x-DTswLI8j.webp 2x">
-                <img src="./assets/juri-4@1x-D8MuNF7t.jpg" srcset="./assets/juri-4@2x-Pss5reot.jpg 2x" width="260" height="300" alt="Член жюри">
-              </picture>
-            </div>
-            <div class="member__info">
-              <h4 class="member__name">Мария Кетова</h4>
-              <h5 class="member__direction">Stretching</h5>
-              <ul class="member__features">
-                <li class="member__feature">Certified Level 2 Trainer</li>
-                <li class="member__feature">Знание анатомии и физиологии человека</li>
-                <li class="member__feature">Опыт — 4 года</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+        <h2 class="juri__title second-title">Жюри</h2>
+        <div class="juri__wrapper">
+          <button class="juri__button juri__button--prev" type="button">
+            <span class="visually-hidden">Показать предыдущего члена жюри</span>
+          </button>
+          <div class="juri__swiper swiper">
+            <ul class="juri__list swiper-wrapper">
+              <li class="juri__item member swiper-slide" tabindex="0">
+                <h3 class="member__title">Анна Павлова</h3>
+                <div class="member__pictute">
+                  <picture>
+                    <source width="260" height="300" type="image/webp"
+                      srcset="./assets/juri-1@1x-R7OSmaUW.webp 1x, ./assets/juri-1@2x-DuW7tHI9.webp 2x">
+                    <img src="./assets/juri-1@1x-Dy-1s_KW.jpg" srcset="./assets/juri-1@2x-BcrEDZfs.jpg 2x" width="260" height="300" alt="Член жюри">
+                  </picture>
+                </div>
+                <div class="member__info">
+                  <h4 class="member__name">Анна Павлова</h4>
+                  <h5 class="member__direction">BodyFlex</h5>
+                  <ul class="member__features">
+                    <li class="member__feature">Certified Level 3 Trainer</li>
+                    <li class="member__feature">Проводит марафоны<br>красоты</li>
+                    <li class="member__feature">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="juri__item member swiper-slide" tabindex="0">
+                <h3 class="member__title">Алексей Лавров</h3>
+                <div class="member__pictute">
+                  <picture>
+                    <source width="260" height="300" type="image/webp"
+                      srcset="data:image/webp;base64,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 1x, ./assets/juri-2@2x-Cy2b-zXx.webp 2x">
+                    <img src="./assets/juri-2@1x-By52E88I.jpg" srcset="./assets/juri-2@2x-C5o0Qg22.jpg 2x" width="260" height="300" alt="Член жюри">
+                  </picture>
+                </div>
+                <div class="member__info">
+                  <h4 class="member__name">Алексей Лавров</h4>
+                  <h5 class="member__direction">X-Functional</h5>
+                  <ul class="member__features">
+                    <li class="member__feature">Certified Level 4 Trainer</li>
+                    <li class="member__feature">Победитель турнира<br>"Кубок 800"</li>
+                    <li class="member__feature">Опыт — 7 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="juri__item member swiper-slide" tabindex="0">
+                <h3 class="member__title">Александр Пашков</h3>
+                <div class="member__pictute">
+                  <picture>
+                    <source width="260" height="300" type="image/webp"
+                      srcset="./assets/juri-3@1x-C2dZQBEE.webp 1x, ./assets/juri-3@2x-BbCEgtdJ.webp 2x">
+                    <img src="./assets/juri-3@1x-DPXpmk6p.jpg" srcset="./assets/juri-3@2x-D6_VW7AZ.jpg 2x" width="260" height="300" alt="Член жюри">
+                  </picture>
+                </div>
+                <div class="member__info">
+                  <h4 class="member__name">Александр Пашков</h4>
+                  <h5 class="member__direction">CrossFit</h5>
+                  <ul class="member__features">
+                    <li class="member__feature">Certified Level 3 Trainer</li>
+                    <li class="member__feature">Победитель чемпионата<br>России по CrossFit</li>
+                    <li class="member__feature">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="juri__item member swiper-slide" tabindex="0">
+                <h3 class="member__title">Мария Кетова</h3>
+                <div class="member__pictute">
+                  <picture>
+                    <source width="260" height="300" type="image/webp"
+                      srcset="./assets/juri-4@1x-O8gRRBp4.webp 1x, ./assets/juri-4@2x-DTswLI8j.webp 2x">
+                    <img src="./assets/juri-4@1x-D8MuNF7t.jpg" srcset="./assets/juri-4@2x-Pss5reot.jpg 2x" width="260" height="300" alt="Член жюри">
+                  </picture>
+                </div>
+                <div class="member__info">
+                  <h4 class="member__name">Мария Кетова</h4>
+                  <h5 class="member__direction">Stretching</h5>
+                  <ul class="member__features">
+                    <li class="member__feature">Certified Level 3 Trainer</li>
+                    <li class="member__feature">Знание анатомии и<br>физиологии человека</li>
+                    <li class="member__feature">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="juri__item member swiper-slide" tabindex="0">
+                <h3 class="member__title">Анна Павлова</h3>
+                <div class="member__pictute">
+                  <picture>
+                    <source width="260" height="300" type="image/webp"
+                      srcset="./assets/juri-1@1x-R7OSmaUW.webp 1x, ./assets/juri-1@2x-DuW7tHI9.webp 2x">
+                    <img src="./assets/juri-1@1x-Dy-1s_KW.jpg" srcset="./assets/juri-1@2x-BcrEDZfs.jpg 2x" width="260" height="300" alt="Член жюри">
+                  </picture>
+                </div>
+                <div class="member__info">
+                  <h4 class="member__name">Анна Павлова</h4>
+                  <h5 class="member__direction">BodyFlex</h5>
+                  <ul class="member__features">
+                    <li class="member__feature">Certified Level 3 Trainer</li>
+                    <li class="member__feature">Проводит марафоны<br>красоты</li>
+                    <li class="member__feature">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="juri__item member swiper-slide" tabindex="0">
+                <h3 class="member__title">Алексей Лавров</h3>
+                <div class="member__pictute">
+                  <picture>
+                    <source width="260" height="300" type="image/webp"
+                      srcset="data:image/webp;base64,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 1x, ./assets/juri-2@2x-Cy2b-zXx.webp 2x">
+                    <img src="./assets/juri-2@1x-By52E88I.jpg" srcset="./assets/juri-2@2x-C5o0Qg22.jpg 2x" width="260" height="300" alt="Член жюри">
+                  </picture>
+                </div>
+                <div class="member__info">
+                  <h4 class="member__name">Алексей Лавров</h4>
+                  <h5 class="member__direction">X-Functional</h5>
+                  <ul class="member__features">
+                    <li class="member__feature">Certified Level 4 Trainer</li>
+                    <li class="member__feature">Победитель турнира<br>"Кубок 800"</li>
+                    <li class="member__feature">Опыт — 7 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="juri__item member swiper-slide" tabindex="0">
+                <h3 class="member__title">Александр Пашков</h3>
+                <div class="member__pictute">
+                  <picture>
+                    <source width="260" height="300" type="image/webp"
+                      srcset="./assets/juri-3@1x-C2dZQBEE.webp 1x, ./assets/juri-3@2x-BbCEgtdJ.webp 2x">
+                    <img src="./assets/juri-3@1x-DPXpmk6p.jpg" srcset="./assets/juri-3@2x-D6_VW7AZ.jpg 2x" width="260" height="300" alt="Член жюри">
+                  </picture>
+                </div>
+                <div class="member__info">
+                  <h4 class="member__name">Александр Пашков</h4>
+                  <h5 class="member__direction">CrossFit</h5>
+                  <ul class="member__features">
+                    <li class="member__feature">Certified Level 3 Trainer</li>
+                    <li class="member__feature">Победитель чемпионата<br>России по CrossFit</li>
+                    <li class="member__feature">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="juri__item member swiper-slide" tabindex="0">
+                <h3 class="member__title">Мария Кетова</h3>
+                <div class="member__pictute">
+                  <picture>
+                    <source width="260" height="300" type="image/webp"
+                      srcset="./assets/juri-4@1x-O8gRRBp4.webp 1x, ./assets/juri-4@2x-DTswLI8j.webp 2x">
+                    <img src="./assets/juri-4@1x-D8MuNF7t.jpg" srcset="./assets/juri-4@2x-Pss5reot.jpg 2x" width="260" height="300" alt="Член жюри">
+                  </picture>
+                </div>
+                <div class="member__info">
+                  <h4 class="member__name">Мария Кетова</h4>
+                  <h5 class="member__direction">Stretching</h5>
+                  <ul class="member__features">
+                    <li class="member__feature">Certified Level 3 Trainer</li>
+                    <li class="member__feature">Знание анатомии и<br>физиологии человека</li>
+                    <li class="member__feature">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="juri__button juri__button--next" type="button">
+            <span class="visually-hidden">Показать следующего члена жюри</span>
+          </button>
+        </div>
       </section>
       <section class="main__features features" data-test="features">
-        <h2 class="features__title">Наши преимущества</h2>
-        <div class="features__wrapper">
-          <div>
+        <h2 class="features__title main-title">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3>Площадь</h3>
+            <span>900</span>
+            <i>кв/м</i>
+            <p>Занимайтесь без очередей и толкучки</p>
+          </li>
+          <li class="features__item">
+            <h3>Собственная парковка</h3>
+            <span>70</span>
+            <i>Машин</i>
+            <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
+          </li>
+          <li class="features__item">
             <h3>Тренажёров</h3>
             <span>100</span>
             <p>Современные тренажёры на все группы мышц</p>
-          </div>
-          <ul>
-            <li>
-              <h4>Площадь</h4>
-              <p>900</p>
-              <span>кв/м</span>
-              <p>Занимайтесь без очередей и толкучки</p>
-            </li>
-            <li>
-              <h4>Собственная парковка</h4>
-              <p>70</p>
-              <span>Машин</span>
-              <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <h4>Комфорт</h4>
-              <p>350</p>
-              <span>Мест</span>
-              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-            </li>
-            <li>
-              <h4>Тренерский опыт</h4>
-              <p>5+</p>
-              <span>Лет</span>
-              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="features__item">
+            <h3>Комфорт</h3>
+            <span>350</span>
+            <i>Мест</i>
+            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </li>
+          <li class="features__item">
+            <h3>Тренерский опыт</h3>
+            <span>5+</span>
+            <i>Лет</i>
+            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </li>
+        </ul>
       </section>
       <section class="main__offers offers" data-test="offers">
-        <h2 class="offers__title">Акции</h2>
-        <div class="offers__price">
-          <h3>Год</h3>
-          <span>4999</span>
-          <p>Безлимитный абонемент в тренажёрный зал</p>
-          <a href="#">Подробнее</a>
-        </div>
-        <div class="offers__pictire">
-          <picture>
-            <source media="(min-width: 1366px)" width="280" height="460" type="image/webp"
-              srcset="./assets/girl-img-desktop@1x-DW90W3uI.webp 1x, ./assets/girl-img-desktop@2x-wNSeT4RF.webp 2x">
-            <source media="(min-width: 768px)" width="400" height="462" type="image/webp"
-              srcset="./assets/girl-img-tablet@1x-DRlTqkiZ.webp 1x, ./assets/girl-img-tablet@2x-DaMQe0J6.webp 2x">
-            <source width="320" height="360" type="image/webp"
-              srcset="./assets/girl-img-mobile@1x-3pimvOWF.webp 1x, ./assets/girl-img-mobile@2x-Bm0H4LKo.webp 2x">
-            <source media="(min-width: 1336px)" width="280" height="460" type="image/jpeg"
-              srcset="./assets/girl-img-desktop@1x-B6vLSQmI.jpg 1x, ./assets/girl-img-desktop@2x-kUFq3M-w.jpg 2x">
-            <source media="(min-width: 768px)" width="400" height="462" type="image/jpeg"
-              srcset="./assets/girl-img-tablet@1x-D9ufw6NH.jpg 1x, ./assets/girl-img-tablet@2x-PI6XLGA-.jpg 2x">
-            <img src="./assets/girl-img-mobile@1x-Cn_xcr0v.jpg" srcset="./assets/girl-img-mobile@2x-o6vBXGSe.jpg 2x" width="320" height="360"
-              alt="Красивая девушка в спортивной одежде">
-          </picture>
-        </div>
-        <div class="offers__stock">
-          <h3>Месяц бесплатно</h3>
-          <p>Приведи друга, получи абонемент в подарок</p>
-          <a href="#">Подробнее</a>
-        </div>
-        <div class="offers__stock">
-          <h3>Скидка 20%</h3>
-          <p>Корпоративный фитнес с командой</p>
-          <a href="#">Подробнее</a>
+        <div class="offers__wrapper">
+          <h2 class="offers__title main-title">Акции</h2>
+          <div class="offers__main">
+            <div class="offers__price">
+              <h3>Год</h3>
+              <span>4999</span>
+              <p>Безлимитный абонемент в тренажёрный зал</p>
+              <a href="#">Подробнее</a>
+            </div>
+            <div class="offers__pictire">
+              <picture>
+                <source media="(min-width: 1366px)" width="280" height="460" type="image/webp"
+                  srcset="./assets/girl-img-desktop@1x-DW90W3uI.webp 1x, ./assets/girl-img-desktop@2x-wNSeT4RF.webp 2x">
+                <source media="(min-width: 768px)" width="400" height="462" type="image/webp"
+                  srcset="./assets/girl-img-tablet@1x-DRlTqkiZ.webp 1x, ./assets/girl-img-tablet@2x-DaMQe0J6.webp 2x">
+                <source width="320" height="360" type="image/webp"
+                  srcset="./assets/girl-img-mobile@1x-3pimvOWF.webp 1x, ./assets/girl-img-mobile@2x-Bm0H4LKo.webp 2x">
+                <source media="(min-width: 1336px)" width="280" height="460" type="image/jpeg"
+                  srcset="./assets/girl-img-desktop@1x-B6vLSQmI.jpg 1x, ./assets/girl-img-desktop@2x-kUFq3M-w.jpg 2x">
+                <source media="(min-width: 768px)" width="400" height="462" type="image/jpeg"
+                  srcset="./assets/girl-img-tablet@1x-D9ufw6NH.jpg 1x, ./assets/girl-img-tablet@2x-PI6XLGA-.jpg 2x">
+                <img src="./assets/girl-img-mobile@1x-Cn_xcr0v.jpg" srcset="./assets/girl-img-mobile@2x-o6vBXGSe.jpg 2x" width="320" height="360"
+                  alt="Красивая девушка в спортивной одежде">
+              </picture>
+            </div>
+          </div>
+          <div class="offers__stock-wrapper">
+            <div class="offers__stock">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в подарок</p>
+              <a href="#">Подробнее</a>
+            </div>
+            <div class="offers__stock">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с командой</p>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="main__faq faq" data-test="faq">
-        <h2>Вопросы и ответы</h2>
-        <div class="faq__tabs">
-          <ul class="faq__tab-list">
-            <li class="faq__tab-item">
-              <button class="faq__tab-button faq__tab-button--active" type="button" rel="tab4">Центр</button>
-            </li>
-            <li class="faq__tab-item">
-              <button class="faq__tab-button" type="button" rel="tab5">Абонемент</button>
-            </li>
-            <li class="faq__tab-item">
-              <button class="faq__tab-button" type="button" rel="tab6">Услуги</button>
-            </li>
-            <li class="faq__tab-item">
-              <button class="faq__tab-button" type="button" rel="tab7">Правила</button>
-            </li>
-          </ul>
-          <div class="faq__info">
-            <ul rel="tab4">
-              <li>
-                <h3>Как стать членом фитнес-центра?</h3>
-                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
-                  При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
+        <div class="faq__wrapper wrapper">
+          <h2 class="faq__title main-title">Вопросы и ответы</h2>
+          <div class="faq__tabs">
+            <ul class="faq__tab-list">
+              <li class="faq__tab-item faq__tab-item--current" rel="tab4">
+                <button class="faq__tab-button faq__tab-button--current" type="button" rel="tab4">Центр</button>
               </li>
-              <li>
-                <h3>Где можно посмотреть расписание?</h3>
-                <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть
-                  возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую
-                  неделю.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
+              <li class="faq__tab-item" rel="tab5">
+                <button class="faq__tab-button" type="button" rel="tab5">Абонемент</button>
               </li>
-              <li>
-                <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-                <p>Да, в фитнес-зале есть несколько кулеров. По одному в женской и мужской раздевалках, и три в самой
-                  тренировочной зоне.
-                  Полотенца не предоставляются. Рекомендуем приносить их с собой.
-                </p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
+              <li class="faq__tab-item" rel="tab6">
+                <button class="faq__tab-button" type="button" rel="tab6">Услуги</button>
               </li>
-              <li>
-                <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
-                <p>Вы можете посмотреть количество тренеров и их квалификацию в разделе "Жюри"</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
+              <li class="faq__tab-item" rel="tab7">
+                <button class="faq__tab-button" type="button" rel="tab7">Правила</button>
               </li>
             </ul>
-            <ul rel="tab5">
-              <li>
-                <h3>Занятия с тренером входят в абонемент?</h3>
-                <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
-                  присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
-                  тренажеру или технике выполнения упражнения.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-              <li>
-                <h3>Можно ли заморозить абонемент?</h3>
-                <p>Заморозка абонемента доступна сроком не более, чем на 30 календарных дней и только для абонемента на
-                  12 месяцев</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-              <li>
-                <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
-                <p>Лимит посещения тренажёрного зала зависит от типа преобретаемого абонемента. Занятия в группах
-                  оплачиваются отдельно. О лимите их посещений Вы можете узнать у тренера по групповым занятиям.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-              <li>
-                <h3>Что такое семейный доступ и доступ для друзей?</h3>
-                <p>Это пробное занятие. По своему абонементу Вы можете единожды провести в зал двух членов семьи и
-                  одного друга.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-            </ul>
-            <ul rel="tab6">
-              <li>
-                <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
-                <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
-                  данные, цели и предложит программу питания.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-              <li>
-                <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
-                <p>Да, в клубе регулярно проводятся соревнования по различным направлениям. Подробнее узнать о
-                  расписании таких мероприятий Вы можете у своего или дежурного тренера, а так же на стойке ресепшн.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-              <li>
-                <h3>Можно ли приобрести в центре спортивное питание?</h3>
-                <p>Да, в нашем центре есть специализированный магазин по продаже спортивного питания, где Вас
-                  проконсультирует специалист и подберёт необходимую продукцию.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-              <li>
-                <h3>Есть ли в центре детская комната?</h3>
-                <p>Да, в центре предусмотрена детская игровая зона. На время Вашего пребывания в тренажёрном зале, Ваши
-                  дети могут вдоволь наиграться на различных снарядах, находясь под присмотром профессионального
-                  педагога.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-            </ul>
-            <ul rel="tab7">
-              <li>
-                <h3>Есть в фитнес-центре дресс-код?</h3>
-                <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
-                  и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
-                  кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и
-                  т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-              <li>
-                <h3>Можно ли приводить с собой детей на тренировки?</h3>
-                <p>Привести с собой ребёнка в фитнес-зал можно по согласованию с тренером на некоторые занятия. При этом
-                  ребёнок должен всё время быть вместе с родителями, не отвлекать группу и не требовать к себе внимания
-                  остальных посетителей занятий.
-                  Несовершеннолетние дети до 13 лет должны находиться на территории фитнес-объекта в сопровождении
-                  родителей или доверенных лиц, не моложе 18 лет. Родители должны быть ознакомлены с правилами поведения
-                  в фитнес-объекте и нести полную ответственность за соблюдение ребёнком указанных правил. 2
-                  Также существуют ограничения, связанные с безопасностью детей. Они не должны входить в помещение, где
-                  находятся тренажеры и снаряды для тяжёлой атлетики, так как велик риск получить серьёзную травму.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-              <li>
-                <h3>Какие дополнительные правила посещения центра?</h3>
-                <p>Все правила посещения центра подробно описаны в Договоре.</p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-              <li>
-                <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
-                <p>В бассейн справка нужна для подтверждения того, что посетитель не страдает от заболеваний, которые
-                  передаются контактным путём.
-                  Для посещения фитнес-клуба справка не обязательна по действующим санитарным правилам.
-                </p>
-                <button class="faq-button" type="button">
-                  <span class="visually-hidden">Открыть описание</span>
-                </button>
-              </li>
-            </ul>
+            <div class="faq__info">
+              <ul class="faq__info-list faq__info-list--current" rel="tab4">
+                <li class="faq__info-item faq__info-item--current" rel="tab8">
+                  <h3>Как стать членом фитнес-центра?</h3>
+                  <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
+                    При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                  <button class="faq__button faq__button--current" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab9">
+                  <h3>Где можно посмотреть расписание?</h3>
+                  <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть
+                    возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую
+                    неделю.</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab10">
+                  <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+                  <p>Да, в фитнес-зале есть несколько кулеров. По одному в женской и мужской раздевалках, и три в самой
+                    тренировочной зоне.
+                    Полотенца не предоставляются. Рекомендуем приносить их с собой.
+                  </p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab11">
+                  <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
+                  <p>Вы можете посмотреть количество тренеров и их квалификацию в разделе "Жюри"</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+              </ul>
+              <ul class="faq__info-list" rel="tab5">
+                <li class="faq__info-item" rel="tab12">
+                  <h3>Занятия с тренером входят в абонемент?</h3>
+                  <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+                    присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+                    тренажеру или технике выполнения упражнения.</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab13">
+                  <h3>Можно ли заморозить абонемент?</h3>
+                  <p>Заморозка абонемента доступна сроком не более, чем на 30 календарных дней и только для абонемента
+                    на
+                    12 месяцев</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab14">
+                  <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+                  <p>Лимит посещения тренажёрного зала зависит от типа преобретаемого абонемента. Занятия в группах
+                    оплачиваются отдельно. О лимите их посещений Вы можете узнать у тренера по групповым занятиям.</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab15">
+                  <h3>Что такое семейный доступ и доступ для друзей?</h3>
+                  <p>Это пробное занятие. По своему абонементу Вы можете единожды провести в зал двух членов семьи и
+                    одного друга.</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+              </ul>
+              <ul class="faq__info-list" rel="tab6">
+                <li class="faq__info-item" rel="tab16">
+                  <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
+                  <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+                    данные, цели и предложит программу питания.</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab17">
+                  <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+                  <p>Да, в клубе регулярно проводятся соревнования по различным направлениям. Подробнее узнать о
+                    расписании таких мероприятий Вы можете у своего или дежурного тренера, а так же на стойке ресепшн.
+                  </p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab18">
+                  <h3>Можно ли приобрести в центре спортивное питание?</h3>
+                  <p>Да, в нашем центре есть специализированный магазин по продаже спортивного питания, где Вас
+                    проконсультирует специалист и подберёт необходимую продукцию.</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab19">
+                  <h3>Есть ли в центре детская комната?</h3>
+                  <p>Да, в центре предусмотрена детская игровая зона. На время Вашего пребывания в тренажёрном зале,
+                    Ваши
+                    дети могут вдоволь наиграться на различных снарядах, находясь под присмотром профессионального
+                    педагога.</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+              </ul>
+              <ul class="faq__info-list" rel="tab7">
+                <li class="faq__info-item" rel="tab20">
+                  <h3>Есть в фитнес-центре дресс-код?</h3>
+                  <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
+                    Верхняя
+                    и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
+                    кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках
+                    и
+                    т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab21">
+                  <h3>Можно ли приводить с собой детей на тренировки?</h3>
+                  <p>Привести с собой ребёнка в фитнес-зал можно по согласованию с тренером на некоторые занятия. При
+                    этом
+                    ребёнок должен всё время быть вместе с родителями, не отвлекать группу и не требовать к себе
+                    внимания
+                    остальных посетителей занятий.
+                    Несовершеннолетние дети до 13 лет должны находиться на территории фитнес-объекта в сопровождении
+                    родителей или доверенных лиц, не моложе 18 лет. Родители должны быть ознакомлены с правилами
+                    поведения
+                    в фитнес-объекте и нести полную ответственность за соблюдение ребёнком указанных правил. 2
+                    Также существуют ограничения, связанные с безопасностью детей. Они не должны входить в помещение,
+                    где
+                    находятся тренажеры и снаряды для тяжёлой атлетики, так как велик риск получить серьёзную травму.
+                  </p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab22">
+                  <h3>Какие дополнительные правила посещения центра?</h3>
+                  <p>Все правила посещения центра подробно описаны в Договоре.</p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+                <li class="faq__info-item" rel="tab23">
+                  <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+                  <p>В бассейн справка нужна для подтверждения того, что посетитель не страдает от заболеваний, которые
+                    передаются контактным путём.
+                    Для посещения фитнес-клуба справка не обязательна по действующим санитарным правилам.
+                  </p>
+                  <button class="faq__button" type="button">
+                    <span class="visually-hidden">Открыть описание</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <section class="main__reviews reviews" data-test="reviews">
-        <h2>Отзывы</h2>
-        <button class="review__button review__button--prev" type="button">
-          <span class="visually-hidden">Показать предыдущий отзыв</span>
-        </button>
-        <div class="reviews__item review">
-          <h3>Анна Орлова</h3>
-          <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют,
-            персонал
-            дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
-          <div class="review__picture">
-            <picture>
-              <source media="(min-width: 768px)" width="80" height="80" type="image/webp"
-                srcset="data:image/webp;base64,UklGRpYFAABXRUJQVlA4IIoFAAAQGQCdASpQAFAAPm0wk0YkIyGhK5jrgIANiWMAwctKl4rbJ8s38NDcG3cLII34PpWffp/BE+PFnN11FyC9AD8++ijoG+nfYM6UH7d+wB+uTJx83dA5JbfI2aaImFs2AzE3AM9o2DBBz3rBj+HX860JFc5sDv5W0KOW8T4OzMB8zN3wCVXKdnatRaUpaheFbGacc/KpEWNtLBe54sDASAuu4f8AHjWFmW94eB1TssAABzcPPsJ0QLOFJkE1sxaYY3Us0GxN0SG7oW5xpI8KZjwgAAD+/73G7ifhsZfVQHbVPajGu+5SQL+yVPaM5wnHf/9cJwnPcsKKl7miIr58MdaIU/t/hrjVgv3Pb2LymKzvpeZTcrNqqzGLpzhm+V5MaLiF3ooCmUXhKqAM/PcJyO+QNXROJL9cqLLbCA2CTsLqjMUgMN1YR9KHPUj5JDL1Z0X3fCCnZq6+tjVPi6YJ88ajhZjk6nrQ7s6egtwf/o1DH4FvDPlLhpTmkigswQHnpxPX7g3XMfaSAu4KQm5gXtmrn+A3AtuETgguaQBwfW7Gun2SAaO0xVqA2OgZnmYgNRTvsBYom/rQDl+JynjZpQEAGAA25ikcnLKEtWFkpene8jwfImY6kR8ETLLiM8uSSocJPnzA6WbCULFyupFyLkfeN7G3t//m2Z83KAnKaq9z/3IaHmLeAlz4QzL9SjzMq9GxXO+baqmhPNluhC+geWrwpX699Gxc6Pn7TkX0NWsqeJcOTpaJo+MaGL6l8xZ6iLYQ/E11aB6ewj4FM+4yFQoEB0Z6UfkAoqyEIKSmXDvwv29slrG92yPQ5dJXP8p03QR7jMwXkaVcZnRhmT/Jjtg5eUbinx8zmBygfoN3grRaQEJbZB7fSbev+L23YD4X+c7+1vJ/636F6QRNfCyc9jxMGrf+EMiKTh6k1FVDnPOqnpxHKiz0SZ7NE/UUglzML5CHsYDNl0Upnai0PhEPeIvOBu736e1vhKCEqmJ0XIEAMswifFOhuoCcqq5m955nrL94gFQXIhu/nEiHU3soOPngALVdJnds6Wnf1a4oI6aqJpuTpVxmDctzMhuEaaKly3hqzrElXt9/Ee2Im3LmJKZJX2fAdB5mWnJzBgXpnU91DoxPZO7tBiJ35DTf/KsfwB6g+SkoT+YzanKRcSrD9g4/ZTmJmUF1eK1thEQ9iF8edwm2Z93qEd34BvV0KaQx8Hsj1HzqSn1r5s+ums7O7jLsQXiau7T3a4l4F1iNgB0lbEAiW2qoLXcf2dXXjzdO72ZrdYWJpevhlZMJJ4+Cn9DPVuiuZHvc3EK+1E9DB1ASQUDjAVyXhH2KlrB+VXb4akTpUKGj7qaYCgEVS79i+2okiobAqLA79qTo17mWYykhC8Jmn6/fnZ/NXrIUmdH+uHSHESvkOnW7CmhiXkcHlZ9FqfBS72wraShk8uD/mzxhaCrLMNHfdakbesTLNZmBof/VL3nwnkBfLmYQ+3GdZJcZfqiGtnNZLvb4b1FPMwtzE2yQnElkfWENqp3sVg9PaP6EDKp1bz3RZzT/P1rxpfcF0JJMiZTHtPCn0ESno7m70KGGCPbLNyn5LMO7ewtuEhV6+bevXTEWjZ4Pc4jDnDFcfp+uLxTcgRkHBb57EYPQLmeKWvHG+9DU1XFVtg8b0HyP3SQXUzrVtYV2BQEnxnxcFsrAlLQijkyZQRZCYTLJCpzVjGEnbDAFXFVHLoxp0YU0amEeyGbvoO61N9eWncl1eEolJYBPjIf26PBh9X8tsJ39LiNzgM2EPp1eZ3BmU3gnxcOFrQwNQnE4DF1LkGNBW3/yrTCCRfmkV8vIqEl/gHU0FLnVshyjw5058SoYkS7nZggQ5ITRPBcPzokXNOVnCYyHqfnw9lNAAA== 1x, data:image/webp;base64,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 2x">
-              <source width="68" height="68" type="image/webp"
-                srcset="data:image/webp;base64,UklGRnYEAABXRUJQVlA4IGoEAABwFACdASpEAEQAPm0ukkYkIqGhK5VeeIANiWMAwvCSiEnnbepXa0sjuOwX8Q/A2XkwW0tePf0V9CGoT5UiIAEo1E9mwecRbMDcpFpg2Y6AytHrQTsX3rGW7wJpmxKNBO3iPqcUDax3QvL1k6HRXeBfOIfXXVpFSFQr3Kx9YjRfR8nT1kzFi84Y6BISvtZrSwqAtqdWSja5Ka4xSyOjGBDT7FeSpbJ2XDEb8rAAAP7/Eh22wRA/aiApCwMO9R347CBannVrnr4IFbm84/7tGLbirtKbd6cfP6rFLkS18lX8bHJQClZgPelmnffbIeV1yoeJCHugNpbYUZj09U0mrahNmzLFBUqeCoSdHsLkmrqpZW/qCJn7qbDTaYf3iPa80fxZbFdpLErIaYDLHxBnakJg6k2BwzREYgqwIjbECdbzSTt5ScItEMz5flM2F+9RP8v4RDvwJnH1So5YWpegaSYZmXtkQ50W+Sla6nOLRuEzQSuUgb1UCmcGU712x87E6AdXfUPxLbHKt/zJw14oD+NxhhkcHFLSeGLTImrJMr5NHq5KT2sSF7NDA3xv+jfTDoWdKud09mARYPug/NcihyUcv8EBGOgGgJmEQR1n8WJqiGi/OuMb9dCkjTkjtdxyYB+CXrlaKE2CS6zCY5gt/0HDqxZ5Jf+waG6534Cqo8akCUQt0MBTrERYcHvaR7kEYhoUE1hfbLDhgmrUq1S+cPYheLef3pmWed0slRBXyEN8B3p+f2SM2wQlP2bDJQpfa5d+OsLRAn6i5BGm0JvjX/JU/GeheBJ2pS4XN6B7oVRn0vDNabSUsZ1Y58Ajw7/owjlyhB4tU22sOD8xBH1rj9FSeVFMKb3gKcO5fs7mOUR9oYnadynUoAdIxrIitcgqglY+LOpXje9xioxes7D0eWxg1faZVkYBq83+kZ0R8doHqnp6zIHfjQE2xWqWyu5IVPtQk3bSUCPB6xNRLkk7qkh2opsfQ94WJ9dlTNZc3hZNc1s0ll99iC3RVpAbXl/ImpFhwrJTQU3jwAlVMew7nmmyFn6G7ei2N4uwwqNIpFZ+OyjSiLMbaPcJuysyLg8xGbZ7VKEbaSrpCtooqJQ7WOHTj763U3+fRveeMiVLU83iIIH4adVxzyjNm2RF8pU9ZYGpUvgu2HaR50j4LzkfRKVBZ80f3rJf72zBEYBwVNGX5z5to59NO1xb2jTM3BioTagayZJQjG2ICzDgmPmmKlqGZ8WJuXxxYPCT0iEDNGNJ/v0XF5Anz0S7jPTzI4GBHMb/Wrb3WlP8XyMY9PmxjM/1MDRni6tnUD/+ycXeDuRKuAWgtlRZT0DVkTi6ipMSpJKzBcE0yaTGQudg4oLu6HuET42fKJWrwCY3Y8L4ABbkvUvyc0+hMAbC76ta4epLxw+tdxBbxVyiTDrE+Y/+RNTGri8AlVGst14DxtlHZvC1UL0gXt/quWHsNaPrflrVtWI7hHk7ongypQoDiuCPxIf4IW4kQgAAAAAAAA== 1x, data:image/webp;base64,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 2x">
-              <source media="(min-width: 768px)" width="80" height="80" type="image/jpeg"
-                srcset="data:image/jpeg;base64,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 1x, ./assets/reviews-img@2x-H_W75697.jpg 2x">
-              <img src="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wgARCABEAEQDASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAAYEBQcBAwL/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMABP/aAAwDAQACEAMQAAAB1SMZgRdrsRfYXd2hsOGlsmLPALiArISx7xqJDrnyZK2TWnvS0k1d8+ka6I4jUHxZ1TrcyYNjDqjqzWqbSe9+b8skfhT3ONsV8c/lsKFOzJY1d5OtC2Uz9XnkHQqAbeGYhhPcAl0WwFYAG3//xAAiEAACAgICAwADAQAAAAAAAAABAwIEAAURExASFAYhIjL/2gAIAQEAAQUCyw9dddrbtnjXzli7ETJGwsLyjtVvPiw6KE2rE7LXM6lzf25zIYjjrzTXzI5vH+78tRLImjZ4I9cqt/rATE0n/RVfPsfmu9QktUTs1FbY8g+Nbe+dB/RyiksMqUZP2cI/LxEpHhapMGzV03spzxXIFkxZFqeu0IS4PIzS1gKO7qd6cBkuKrkrCq0ojFphPNa2SrARC5kQIjLepWxtiuIwhEKthEjGt/n4GP2FdMEQ8sVBmfkVNa2VB7BFNQHn/8QAHhEAAgICAgMAAAAAAAAAAAAAARAAEQIhAxITIjL/2gAIAQMBAT8BdvxgiEdTStce8ZyaGlUqD0pDKhTy+ZmdP//EABsRAAIDAQEBAAAAAAAAAAAAAAEQAAIRITEi/9oACAECAQE/AQGQzfIDqxX4ZRbAYfpEd1j2V9f/xAAuEAABAwEGBAQHAQAAAAAAAAABAAIRAxASITFBURMyYXEgI2KhBCJCUoGRwZL/2gAIAQEABj8CV+q6AooDht31U1ajj3KhpcOqBZVLm7OxQZV8up7G11R+QV+p+Bsi84qHmNln+kLpmwfD1jj9J/lgpDlZn3sDGMLypNIrKFdOtgIwITKmpGPdVH7uJsJPMSi2+2UftQPW0s9UoiwVL+DTEJzxUcOgKLRmgzDObZCqjQm8LH0873VcoA7ogZqVIaYWKa54xeby4jB5jPcWcZo5MViSDsERmUQ5PpVNZ/0M1cOWqAGQsNRkic2hR7LhE3cYH8XrCDinPYIgteHabOV1ng+dsq+0umJTDuEHQT38H//EACYQAQACAQQCAgICAwAAAAAAAAEAESEQMUFRYXGBsZGhIMHR4fD/2gAIAQEAAT8hiAHF2+ogg7GV/iFvu7HaA9J8WIEAATbP7NWx8Hb1GifQOiAAw2O2NYa3Rt6jVoV2rlJUDS1Hy+fLR3fL5L/WlkAXQS4FDMVUqKfyvnRS1FicMLxadcoyG/7iLLnAvDvRKS3S49BbbGYBa5VB0TirD8EKpuNaHKltXfmHx3ehU3c0AWI5ZQA3K31MRaGo1DXwBzpjqKLBpkjIvI0l/cyF/SWAuuK7iAisiECYJ7IXNRl1sfUU73CfIaJEpJC/9g/qBK29x0eEq4AGMR0lfnh+YbThlHEEugoOjRet1sl7lI8FYR9TK7jlfZFlVwJzC94QRMKF4uD3QSknleV/gbQeXMpT0cNy64uX+oiteomE+WIAFBRr/9oADAMBAAIAAwAAABCwTfnwEDB7I7QkHLw3EEzz/wDc8//EABwRAQACAwADAAAAAAAAAAAAAAEAERAhUUFxgf/aAAgBAwEBPxBal9ZfIdYW4FKx0wMAAyyPFREhDZh3DY6fcbqMr8a+ZTYiBpz/AP/EABsRAQEBAAMBAQAAAAAAAAAAAAEAERAhMUFx/9oACAECAQE/ENLzy/bHs4DCRIEA3he9RJWWuMIzlsTuXfTEvu2gHJoHl//EACYQAQACAgICAQQCAwAAAAAAAAEAESExQVFhgXEQkaHBINGx8PH/2gAIAQEAAT8QgADgbXobWaPhADf4/L5hzALVh9rmlggu3nDcBoJYl57yekmDGCbN0LT4fu/WtIeBttDysyvdC/6jbzNfsLas0QURNYnmq18515hDSGgFL+GBhWrXd82cZjGAV0/NOTlrTzrr6YysAaFf4Qe2LmNxuTNBy15lJ6cDB1VwcsuoVzdrFvDTLuEDI9SDYnuAsCgXBgfcY4N+kKr8VOjMOd+wFQLrdWsVpuHG++vcx6y+heJjNADRd9y7ebixqpaw4H9gzcAl8jUWaHHDg0ld51MwglLbvX9xblWwrsnGbA0t/FlEWB8RY5pY13Q/uZUm6X9Js9Rcxh9ReFBvJ4fxNbXpN1kZqOXyYgsr6Bo0yfe4UJLCieElYX6QfzApn6ZHX3APuJKKqWd4dps99y4+hC5WU4L3FUpeKi3nnFvc24k3r/sACv7Bdo95lVxrDgKg4LU+ULAUNkfD26gEzDaAoD6WSlhDkDq+SPgAZKmOql4sXewHHIj6CJqo3oHs/qAYKCxc3KfjVqKlNpQdvBBVcW37T/CyCqjQeyO3OtbDKX5O6h2j7eULv5jMTmrg/BRDYgwAUH1//9k=" srcset="./assets/reviews-img-mobile@2x-CWKhZ7mQ.jpg 2x" width="68" height="68"
-                alt="Автор отзыва">
-            </picture>
+        <div class="reviews__wrapper wrapper">
+          <h2 class="reviews__title second-title">Отзывы</h2>
+          <div class="reviews__slider-wrapper">
+            <button class="reviews__button reviews__button--prev" type="button" data-id="reviews-prev">
+              <span class="visually-hidden">Показать предыдущий отзыв</span>
+            </button>
+            <div class="reviews__swiper swiper" data-id="reviews-swiper">
+              <div class="reviews__review-wrapper swiper-wrapper">
+                <div class="reviews__item review swiper-slide">
+                  <h3>Анна Орлова</h3>
+                  <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют,
+                    персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+                  <div class="review__picture">
+                    <picture>
+                      <source media="(min-width: 768px)" width="80" height="80" type="image/webp"
+                        srcset="data:image/webp;base64,UklGRpYFAABXRUJQVlA4IIoFAAAQGQCdASpQAFAAPm0wk0YkIyGhK5jrgIANiWMAwctKl4rbJ8s38NDcG3cLII34PpWffp/BE+PFnN11FyC9AD8++ijoG+nfYM6UH7d+wB+uTJx83dA5JbfI2aaImFs2AzE3AM9o2DBBz3rBj+HX860JFc5sDv5W0KOW8T4OzMB8zN3wCVXKdnatRaUpaheFbGacc/KpEWNtLBe54sDASAuu4f8AHjWFmW94eB1TssAABzcPPsJ0QLOFJkE1sxaYY3Us0GxN0SG7oW5xpI8KZjwgAAD+/73G7ifhsZfVQHbVPajGu+5SQL+yVPaM5wnHf/9cJwnPcsKKl7miIr58MdaIU/t/hrjVgv3Pb2LymKzvpeZTcrNqqzGLpzhm+V5MaLiF3ooCmUXhKqAM/PcJyO+QNXROJL9cqLLbCA2CTsLqjMUgMN1YR9KHPUj5JDL1Z0X3fCCnZq6+tjVPi6YJ88ajhZjk6nrQ7s6egtwf/o1DH4FvDPlLhpTmkigswQHnpxPX7g3XMfaSAu4KQm5gXtmrn+A3AtuETgguaQBwfW7Gun2SAaO0xVqA2OgZnmYgNRTvsBYom/rQDl+JynjZpQEAGAA25ikcnLKEtWFkpene8jwfImY6kR8ETLLiM8uSSocJPnzA6WbCULFyupFyLkfeN7G3t//m2Z83KAnKaq9z/3IaHmLeAlz4QzL9SjzMq9GxXO+baqmhPNluhC+geWrwpX699Gxc6Pn7TkX0NWsqeJcOTpaJo+MaGL6l8xZ6iLYQ/E11aB6ewj4FM+4yFQoEB0Z6UfkAoqyEIKSmXDvwv29slrG92yPQ5dJXP8p03QR7jMwXkaVcZnRhmT/Jjtg5eUbinx8zmBygfoN3grRaQEJbZB7fSbev+L23YD4X+c7+1vJ/636F6QRNfCyc9jxMGrf+EMiKTh6k1FVDnPOqnpxHKiz0SZ7NE/UUglzML5CHsYDNl0Upnai0PhEPeIvOBu736e1vhKCEqmJ0XIEAMswifFOhuoCcqq5m955nrL94gFQXIhu/nEiHU3soOPngALVdJnds6Wnf1a4oI6aqJpuTpVxmDctzMhuEaaKly3hqzrElXt9/Ee2Im3LmJKZJX2fAdB5mWnJzBgXpnU91DoxPZO7tBiJ35DTf/KsfwB6g+SkoT+YzanKRcSrD9g4/ZTmJmUF1eK1thEQ9iF8edwm2Z93qEd34BvV0KaQx8Hsj1HzqSn1r5s+ums7O7jLsQXiau7T3a4l4F1iNgB0lbEAiW2qoLXcf2dXXjzdO72ZrdYWJpevhlZMJJ4+Cn9DPVuiuZHvc3EK+1E9DB1ASQUDjAVyXhH2KlrB+VXb4akTpUKGj7qaYCgEVS79i+2okiobAqLA79qTo17mWYykhC8Jmn6/fnZ/NXrIUmdH+uHSHESvkOnW7CmhiXkcHlZ9FqfBS72wraShk8uD/mzxhaCrLMNHfdakbesTLNZmBof/VL3nwnkBfLmYQ+3GdZJcZfqiGtnNZLvb4b1FPMwtzE2yQnElkfWENqp3sVg9PaP6EDKp1bz3RZzT/P1rxpfcF0JJMiZTHtPCn0ESno7m70KGGCPbLNyn5LMO7ewtuEhV6+bevXTEWjZ4Pc4jDnDFcfp+uLxTcgRkHBb57EYPQLmeKWvHG+9DU1XFVtg8b0HyP3SQXUzrVtYV2BQEnxnxcFsrAlLQijkyZQRZCYTLJCpzVjGEnbDAFXFVHLoxp0YU0amEeyGbvoO61N9eWncl1eEolJYBPjIf26PBh9X8tsJ39LiNzgM2EPp1eZ3BmU3gnxcOFrQwNQnE4DF1LkGNBW3/yrTCCRfmkV8vIqEl/gHU0FLnVshyjw5058SoYkS7nZggQ5ITRPBcPzokXNOVnCYyHqfnw9lNAAA== 1x, data:image/webp;base64,UklGRhgOAABXRUJQVlA4IAwOAABwPACdASqgAKAAPm0uk0ckIiGhKfOtcIANiWVEeFQ9gAYgfgaezqRV4McH/cAc7H6bd6hn3juB/znh75tPk8sG4v66Z4+1ngBPY3M+b11cbCf6D7AH8t/sXrH/6Xkt+u/YQ8uH2Jfub7NyW15Ie/qa8hc96suCa4roG/pK5lnRttdbNyS7P/JzyCDT+x4AWBreZxiWdzgKMsmOLM/pjRGewiF+aPc9Ol+fg7ozqFNT5BhngLtIOj1+lkKigdUelqLHVSpZQLCZWTSrrTz75JvRAkVMJbYPRK9EKiDk69mS4JGFKIdbzHn+DieL4Qf8GXX9LeAF06PkiqlcUGpS7Mro93z01NiD0alak9XH4zhdSz3hf319ensaBBTlgDA7TlW1Fi0no2JHn+S0SRxTZZbUtDEt9ziJXvy/zihjOJj4JDsQnNNsGYbSvQ/Fccvr/VjnZs0vkh/br5zf76h3XJLMJA3WFKc0v3EhwjvvcWn9yX9dQLHW6qKBa17aI5Jfa7UCOSvmYEkS2vJSNYzFq19ZNIkkrfAuAnz7R2LxxZZjrO4r+iZXS+pvLLrj8iX5tNyqMRmyojsujcjJbb43AjGUWjpoG0B2vF9FvynM0ge67rtw49Lk15yOp3W4WOf5e3f2n8P00ofHJcFxNgAA/k0AIsg2u3EUZ3kzvpygk8vqXXUM3e92HTBAPvXY/fnLlfrjCJnYvv420CP5W+7eC5VrHfOA9aXUMbw6Aj5DppU7XV5SIUJaLud0bBcYPXAA1AiHwAj9FKCcplp0Z9jCmHZGJ5cNKh5jvJ7HlHY9GPCgDW7DC19UZWmM7gdtHoXe3FThUqd9wvmTzERPwVO9EhKJySjY4JgOB0bJRKf/pqX/uv08etbmLcLShZuh3J6nfeOoe427bcw+soO30T5+5YO7Vwiz3vkoAk03JkuraM6D6NUtBQCrkgeMacgMo4IteteYPJ3aQXZgtFgr1yaz6ou8v9ZihLLlrpnYqk16djco055g8CBLAQTqNyXRBA8l7mZPRTav8fnoUnl/sa4GSyfCw81n8K9yBFvSS8B+xLrPf4n0P5d075WTA/0IdULd0JyDTZI/knhWmyKHyoY07MibsDysfmrseWWHu6iqshA1t9oyakG9CfXEZo6H7RgXxXwcB8kH89931khHhWxPtD4F1sHH0tQf6B702Nx+wwo+BWljgTLKxOq2C4/uaSYGolflxh8Oh7i9Xc52nX8L2cHo/UsPAz0cgVeUtcs0nHvHkBiINRAqSoPvxO/HNiv4mj1r1Ir5GiVV4BweOUcd8HrtHF1wqLOk3nqOCpPOQNqJbtqTYFg6hReQj9TLpc9IS1at2BEtBKmWl/st2WL8mVmrWrrF7PGRLZCRJrwzdb9qPRbFMEUQ9ksexAYL5YBM5TY3i/pZdexAvw90QspiJGBxOabkuJ5m3dPkT1X+uepMRSyLliN8AfqR2akHN4aNTT1drfjM1Kn6qesjiejr+RQiNei4OzEys51bv0SSQxUwp/DJAf9CZZwlyF9N9BQhfldGVW6l8UJ7/EhckuEG43S3hz078r+UUKKlSidGAaM5CDmTr5ZkVfvaxs62JVz0n6kdsvP5t+8o02qiv5UApAfHEeNYbO4suPDDe70G8Zt/79f5cOB3hT1wAwhg60Qf6TXl1cXatkg3NYhX3JK0sjUaWY14ZRRSc3a9xM/WrkN5EUDti3E+M3VfhiXbQr/knI9g9w0Z863J76GkLGnhgZDZR+FQnUyyUUuVTBcN9iNpLSot9SJnKzz4FrLmMQPoIchCXy8GoOtvUBZJffy7oy2O6zsYNtUze+DuCqfVTpcl0+U8k24a0g+/ia/eQUWIO4k8A041ikZoedhAurFeqYmI4pS+d+D1WIJ2SyuCTZKqHbzJk//0thWmgmQFHQm/T+9DyUuzmtWyWkQtjLRnVvsTTIRlri1N/2L47MjwdIqoG+duJaGLCIMJd28NowWSUzokIRFM9zyTyhuuczAryknlfj+jOWeMc8rGJbFjEoN80sakSmaVQZ6hvX2OzduqF9/Ab9/FYXi+9fiqT7K5srmYzxjfABPpi/eKkIwiz4QBTkikL+UfHadmqIKJhseaYSHUVmB4Myk0uS418l44yObhNySs6sjPbtdzjasJf9CpM66gQ3zGSGBNRltWiMVfILFyBPfGyZBALoBDuk1cW07pi/1R24GquvYLgVPO8/znbU620pzce0ovUZ9o1Kx4VWqWN84u39XfCdhRlikwPuzhWe3KPwxNXkB9z8i1ucNHl2DVn9w7bMd5zAPK0xYL9zQP+XJv8Ye1z96c5S1MLOssjcy7SyqUoI7mz53UdZTBlrfP1ip0Wyl6HrjSuWZOc8Wh9mb637WKxbijzCVMrHnxhVS/rPvHMGWiNLVGPDeBoIKp2bM+LsS4nQgioT2liM/REgn6LiTvgz8gD3Y46wseSByrLn+LYN3OwDNak1mWa2Gj5USmprZK1tX9DRtrfLmY6XOBS6UeTZMM8R2/oDrjUJZhjGih9JKPWgUUtIZknnaW2hiErt1p+NDDBmvuWyhOUi5JqTKWmi6ZXqcjix2+67g8R+3vBTEEGuxse29nEfx/b0/cGfUKD+evPR5O4yLi7uq1qRqUq4EDVGtVzyzVJoNLy7Bw7qrBAxwtZyfIQ7R8ZDoh0DW5idrxQIiXOviRYVIdLfDY7ZXg7tFOqyHUuu9LY4ExG1zUSCTPYwCdIbsV8hqQRAMoyIQgofoKteZtu1QE/9Tm3P0TqyqPootMb3Luyz57jb4SchpXLp9LllcMl5fbx+H8JCJl0OkEZ9lCBcBggZZ8898o7jSWo+9EG/SssogsqxKrXmv6lIjL20vsiTrjC0zCMW0bHt5XN6+EbR86F3L/mFD4SNuoFdTHEcvUHtirShTQ1GB8sHNleQza99WiZmQ3jUF4sCLXBAPaD4XN+FMuygultc7uLlqHTato6OWYL5Rvnl50F4T9/HF016E399L97hx5J2g/VxRAA5lh6f5YaCO+YgfzjXbFj2I8ab7JttP8yAoB/7wkkFtOaeE4nfy4y6fIyKijIMcGvuZHBEqZ+kosCJaGQFjqTvUUftn8ZNlyD2U1wPPZ2G8Nl0CtPVEKEIUskPuug3PJZ2DZX2WkFgW1M/SPnvpmffe8a/9/E4/BCSvrfq6F70gykwT7Gf2zfLP9XYNLRF4xjaseHEGXCLH+em3hfIXaAt8TwoeC8+clzvCqWajGLk5Jv1BEPFAffArCMPZkyGivQFEYrVfnR1QSBw8tdfqnSB4668HuIyEUJ0zSjUNxJ8qPBScT9Kd6Li3j7vMkfpF34R/aThD83WIWPvcgAGmEIyavySexfW918+6dTg/rYpeNEcYaIenz19xABjhTcjCqXg/YLQuA4LuhCyTY4b15re1qS5Mw2+b7r9sCPBxX5TUfsLwIupy0/QjoGKT+LkaXVndMACvPXcQcuFXuE5rHMZM0NSA+VAj9NR/7T8Gh3ullRMwC7yK/T6vG3DIfgh69rm5N+jb2BROzfRkD2+RV53plRn1+Kb91XBQQRKigbPc/rJIqHBvUpHEEhW/Qlrxn01mO++Q4NvxbAo7K/OXnmDBmyNkP8WxWZzZ6tStM8TJhQ2yoODEPYp3S5WryhrUK57DixdXsGSFC1es2CbKiwPqHGc4QJglDkj1I7z73HOWdH/tFpFGe39sA2dcgwUcRFW2vWr7ZNzQVh8B0H0tt91EA0c2/3Ji/7FgWjwpO0PIXbdnPcvIM3bBVRyQr28Ca9bb4DA8RgPzFOyPR030TxOk5G6si8SEFpW13IE3yQ5sXkBc9FlfuVG2FdQzmxcCPsWsOoxF/jzWtf0BgULbtaebIHtrW6PLJdBsBE8TUVJBJA2QNy1kGtf0g1rj0WpANTej8WSl+LYlHoagt62YKqwpN25LxnT89NTTA676avIMHkNeHid+AJBD4mL7LarNECu6OPTexK4HS7NGLuHlMsigiRQ04bUUH0XIRdxwaY+NwWi1LvfGxzsqSycoiZSLrffqXzLMMcckqJ9h2f3NCQqlqz18fDHEKaDyW68uPTDEya4QhUp5t7nk7FMr5CgzL04GPAdiASNHsVLpxAw4eeZzs5Pv0gLZy5ZtqC3apavYPlLvG2sE/gHJX0nZaFUA37ols7uZMkBdk5c6lzMdq3sV97YuSYoEP6CgrVkhADlTfSqLQfa2r/pnYV3cqTCKvJS+Pb6l4Zdl2Q42l1eD1nDICX+ol5pDaMxhAZ7dT/2c1QTLpX1CHkAD+ZmsQtGSvaZlsccqn9OuhbbOad53I6oqeW/4Wqvtl5Kgn4/dHIQ7uVgi3//yCcvp5Mdev0vB1U+Z1mwDgv/r6/6qwf3G6K80i/PcZJ6HPEmAH8oNNzjRUAfcsJlszN3SSgiA63G5KPtIGN5Z9fGKqcAGmYDx3Ece9BeV5k3wuaRywkI9aZ7y6qBwMtqwrQNinV9lBSjvFgcpZT8qJ1pPAF7jD/mVJS0b6L44lKPXhkUXixQObiITiqpmIlS9Heh7aY8X1fnaCOFpcBQMOhJRcg5n8Xk4kiAnC46mN3w5d1/SKiuLA5WTCfwsinJcqyvQn+gAuDqXz/7vduFs2DiuPOaQAxp8eWsrENSVtFwHjBjIlt1oT7vAAgdyOdkfrsXPaixoJGH8o3DdRjzWDyC/q4/jWjYjIcPGWFF3znFpXoBUjBm3JDVEsCzouoDtOBW7f8ydif/cDSgb9w0+9eZ2UrtNb+tNGAAqTZR2WwzWc4gBBkw3MQ4LKP0uIwYGibuAAAA== 2x">
+                      <source width="68" height="68" type="image/webp"
+                        srcset="data:image/webp;base64,UklGRnYEAABXRUJQVlA4IGoEAABwFACdASpEAEQAPm0ukkYkIqGhK5VeeIANiWMAwvCSiEnnbepXa0sjuOwX8Q/A2XkwW0tePf0V9CGoT5UiIAEo1E9mwecRbMDcpFpg2Y6AytHrQTsX3rGW7wJpmxKNBO3iPqcUDax3QvL1k6HRXeBfOIfXXVpFSFQr3Kx9YjRfR8nT1kzFi84Y6BISvtZrSwqAtqdWSja5Ka4xSyOjGBDT7FeSpbJ2XDEb8rAAAP7/Eh22wRA/aiApCwMO9R347CBannVrnr4IFbm84/7tGLbirtKbd6cfP6rFLkS18lX8bHJQClZgPelmnffbIeV1yoeJCHugNpbYUZj09U0mrahNmzLFBUqeCoSdHsLkmrqpZW/qCJn7qbDTaYf3iPa80fxZbFdpLErIaYDLHxBnakJg6k2BwzREYgqwIjbECdbzSTt5ScItEMz5flM2F+9RP8v4RDvwJnH1So5YWpegaSYZmXtkQ50W+Sla6nOLRuEzQSuUgb1UCmcGU712x87E6AdXfUPxLbHKt/zJw14oD+NxhhkcHFLSeGLTImrJMr5NHq5KT2sSF7NDA3xv+jfTDoWdKud09mARYPug/NcihyUcv8EBGOgGgJmEQR1n8WJqiGi/OuMb9dCkjTkjtdxyYB+CXrlaKE2CS6zCY5gt/0HDqxZ5Jf+waG6534Cqo8akCUQt0MBTrERYcHvaR7kEYhoUE1hfbLDhgmrUq1S+cPYheLef3pmWed0slRBXyEN8B3p+f2SM2wQlP2bDJQpfa5d+OsLRAn6i5BGm0JvjX/JU/GeheBJ2pS4XN6B7oVRn0vDNabSUsZ1Y58Ajw7/owjlyhB4tU22sOD8xBH1rj9FSeVFMKb3gKcO5fs7mOUR9oYnadynUoAdIxrIitcgqglY+LOpXje9xioxes7D0eWxg1faZVkYBq83+kZ0R8doHqnp6zIHfjQE2xWqWyu5IVPtQk3bSUCPB6xNRLkk7qkh2opsfQ94WJ9dlTNZc3hZNc1s0ll99iC3RVpAbXl/ImpFhwrJTQU3jwAlVMew7nmmyFn6G7ei2N4uwwqNIpFZ+OyjSiLMbaPcJuysyLg8xGbZ7VKEbaSrpCtooqJQ7WOHTj763U3+fRveeMiVLU83iIIH4adVxzyjNm2RF8pU9ZYGpUvgu2HaR50j4LzkfRKVBZ80f3rJf72zBEYBwVNGX5z5to59NO1xb2jTM3BioTagayZJQjG2ICzDgmPmmKlqGZ8WJuXxxYPCT0iEDNGNJ/v0XF5Anz0S7jPTzI4GBHMb/Wrb3WlP8XyMY9PmxjM/1MDRni6tnUD/+ycXeDuRKuAWgtlRZT0DVkTi6ipMSpJKzBcE0yaTGQudg4oLu6HuET42fKJWrwCY3Y8L4ABbkvUvyc0+hMAbC76ta4epLxw+tdxBbxVyiTDrE+Y/+RNTGri8AlVGst14DxtlHZvC1UL0gXt/quWHsNaPrflrVtWI7hHk7ongypQoDiuCPxIf4IW4kQgAAAAAAAA== 1x, data:image/webp;base64,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 2x">
+                      <source media="(min-width: 768px)" width="80" height="80" type="image/jpeg"
+                        srcset="data:image/jpeg;base64,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 1x, ./assets/reviews-img@2x-H_W75697.jpg 2x">
+                      <img src="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wgARCABEAEQDASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAAYEBQcBAwL/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMABP/aAAwDAQACEAMQAAAB1SMZgRdrsRfYXd2hsOGlsmLPALiArISx7xqJDrnyZK2TWnvS0k1d8+ka6I4jUHxZ1TrcyYNjDqjqzWqbSe9+b8skfhT3ONsV8c/lsKFOzJY1d5OtC2Uz9XnkHQqAbeGYhhPcAl0WwFYAG3//xAAiEAACAgICAwADAQAAAAAAAAABAwIEAAURExASFAYhIjL/2gAIAQEAAQUCyw9dddrbtnjXzli7ETJGwsLyjtVvPiw6KE2rE7LXM6lzf25zIYjjrzTXzI5vH+78tRLImjZ4I9cqt/rATE0n/RVfPsfmu9QktUTs1FbY8g+Nbe+dB/RyiksMqUZP2cI/LxEpHhapMGzV03spzxXIFkxZFqeu0IS4PIzS1gKO7qd6cBkuKrkrCq0ojFphPNa2SrARC5kQIjLepWxtiuIwhEKthEjGt/n4GP2FdMEQ8sVBmfkVNa2VB7BFNQHn/8QAHhEAAgICAgMAAAAAAAAAAAAAARAAEQIhAxITIjL/2gAIAQMBAT8BdvxgiEdTStce8ZyaGlUqD0pDKhTy+ZmdP//EABsRAAIDAQEBAAAAAAAAAAAAAAEQAAIRITEi/9oACAECAQE/AQGQzfIDqxX4ZRbAYfpEd1j2V9f/xAAuEAABAwEGBAQHAQAAAAAAAAABAAIRAxASITFBURMyYXEgI2KhBCJCUoGRwZL/2gAIAQEABj8CV+q6AooDht31U1ajj3KhpcOqBZVLm7OxQZV8up7G11R+QV+p+Bsi84qHmNln+kLpmwfD1jj9J/lgpDlZn3sDGMLypNIrKFdOtgIwITKmpGPdVH7uJsJPMSi2+2UftQPW0s9UoiwVL+DTEJzxUcOgKLRmgzDObZCqjQm8LH0873VcoA7ogZqVIaYWKa54xeby4jB5jPcWcZo5MViSDsERmUQ5PpVNZ/0M1cOWqAGQsNRkic2hR7LhE3cYH8XrCDinPYIgteHabOV1ng+dsq+0umJTDuEHQT38H//EACYQAQACAQQCAgICAwAAAAAAAAEAESEQMUFRYXGBsZGhIMHR4fD/2gAIAQEAAT8hiAHF2+ogg7GV/iFvu7HaA9J8WIEAATbP7NWx8Hb1GifQOiAAw2O2NYa3Rt6jVoV2rlJUDS1Hy+fLR3fL5L/WlkAXQS4FDMVUqKfyvnRS1FicMLxadcoyG/7iLLnAvDvRKS3S49BbbGYBa5VB0TirD8EKpuNaHKltXfmHx3ehU3c0AWI5ZQA3K31MRaGo1DXwBzpjqKLBpkjIvI0l/cyF/SWAuuK7iAisiECYJ7IXNRl1sfUU73CfIaJEpJC/9g/qBK29x0eEq4AGMR0lfnh+YbThlHEEugoOjRet1sl7lI8FYR9TK7jlfZFlVwJzC94QRMKF4uD3QSknleV/gbQeXMpT0cNy64uX+oiteomE+WIAFBRr/9oADAMBAAIAAwAAABCwTfnwEDB7I7QkHLw3EEzz/wDc8//EABwRAQACAwADAAAAAAAAAAAAAAEAERAhUUFxgf/aAAgBAwEBPxBal9ZfIdYW4FKx0wMAAyyPFREhDZh3DY6fcbqMr8a+ZTYiBpz/AP/EABsRAQEBAAMBAQAAAAAAAAAAAAEAERAhMUFx/9oACAECAQE/ENLzy/bHs4DCRIEA3he9RJWWuMIzlsTuXfTEvu2gHJoHl//EACYQAQACAgICAQQCAwAAAAAAAAEAESExQVFhgXEQkaHBINGx8PH/2gAIAQEAAT8QgADgbXobWaPhADf4/L5hzALVh9rmlggu3nDcBoJYl57yekmDGCbN0LT4fu/WtIeBttDysyvdC/6jbzNfsLas0QURNYnmq18515hDSGgFL+GBhWrXd82cZjGAV0/NOTlrTzrr6YysAaFf4Qe2LmNxuTNBy15lJ6cDB1VwcsuoVzdrFvDTLuEDI9SDYnuAsCgXBgfcY4N+kKr8VOjMOd+wFQLrdWsVpuHG++vcx6y+heJjNADRd9y7ebixqpaw4H9gzcAl8jUWaHHDg0ld51MwglLbvX9xblWwrsnGbA0t/FlEWB8RY5pY13Q/uZUm6X9Js9Rcxh9ReFBvJ4fxNbXpN1kZqOXyYgsr6Bo0yfe4UJLCieElYX6QfzApn6ZHX3APuJKKqWd4dps99y4+hC5WU4L3FUpeKi3nnFvc24k3r/sACv7Bdo95lVxrDgKg4LU+ULAUNkfD26gEzDaAoD6WSlhDkDq+SPgAZKmOql4sXewHHIj6CJqo3oHs/qAYKCxc3KfjVqKlNpQdvBBVcW37T/CyCqjQeyO3OtbDKX5O6h2j7eULv5jMTmrg/BRDYgwAUH1//9k=" srcset="./assets/reviews-img-mobile@2x-CWKhZ7mQ.jpg 2x" width="68"
+                        height="68" alt="Автор отзыва">
+                    </picture>
+                  </div>
+                </div>
+                <div class="reviews__item review swiper-slide">
+                  <h3>Анна Орлова</h3>
+                  <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют,
+                    персонал
+                    дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+                  <div class="review__picture">
+                    <picture>
+                      <source media="(min-width: 768px)" width="80" height="80" type="image/webp"
+                        srcset="data:image/webp;base64,UklGRpYFAABXRUJQVlA4IIoFAAAQGQCdASpQAFAAPm0wk0YkIyGhK5jrgIANiWMAwctKl4rbJ8s38NDcG3cLII34PpWffp/BE+PFnN11FyC9AD8++ijoG+nfYM6UH7d+wB+uTJx83dA5JbfI2aaImFs2AzE3AM9o2DBBz3rBj+HX860JFc5sDv5W0KOW8T4OzMB8zN3wCVXKdnatRaUpaheFbGacc/KpEWNtLBe54sDASAuu4f8AHjWFmW94eB1TssAABzcPPsJ0QLOFJkE1sxaYY3Us0GxN0SG7oW5xpI8KZjwgAAD+/73G7ifhsZfVQHbVPajGu+5SQL+yVPaM5wnHf/9cJwnPcsKKl7miIr58MdaIU/t/hrjVgv3Pb2LymKzvpeZTcrNqqzGLpzhm+V5MaLiF3ooCmUXhKqAM/PcJyO+QNXROJL9cqLLbCA2CTsLqjMUgMN1YR9KHPUj5JDL1Z0X3fCCnZq6+tjVPi6YJ88ajhZjk6nrQ7s6egtwf/o1DH4FvDPlLhpTmkigswQHnpxPX7g3XMfaSAu4KQm5gXtmrn+A3AtuETgguaQBwfW7Gun2SAaO0xVqA2OgZnmYgNRTvsBYom/rQDl+JynjZpQEAGAA25ikcnLKEtWFkpene8jwfImY6kR8ETLLiM8uSSocJPnzA6WbCULFyupFyLkfeN7G3t//m2Z83KAnKaq9z/3IaHmLeAlz4QzL9SjzMq9GxXO+baqmhPNluhC+geWrwpX699Gxc6Pn7TkX0NWsqeJcOTpaJo+MaGL6l8xZ6iLYQ/E11aB6ewj4FM+4yFQoEB0Z6UfkAoqyEIKSmXDvwv29slrG92yPQ5dJXP8p03QR7jMwXkaVcZnRhmT/Jjtg5eUbinx8zmBygfoN3grRaQEJbZB7fSbev+L23YD4X+c7+1vJ/636F6QRNfCyc9jxMGrf+EMiKTh6k1FVDnPOqnpxHKiz0SZ7NE/UUglzML5CHsYDNl0Upnai0PhEPeIvOBu736e1vhKCEqmJ0XIEAMswifFOhuoCcqq5m955nrL94gFQXIhu/nEiHU3soOPngALVdJnds6Wnf1a4oI6aqJpuTpVxmDctzMhuEaaKly3hqzrElXt9/Ee2Im3LmJKZJX2fAdB5mWnJzBgXpnU91DoxPZO7tBiJ35DTf/KsfwB6g+SkoT+YzanKRcSrD9g4/ZTmJmUF1eK1thEQ9iF8edwm2Z93qEd34BvV0KaQx8Hsj1HzqSn1r5s+ums7O7jLsQXiau7T3a4l4F1iNgB0lbEAiW2qoLXcf2dXXjzdO72ZrdYWJpevhlZMJJ4+Cn9DPVuiuZHvc3EK+1E9DB1ASQUDjAVyXhH2KlrB+VXb4akTpUKGj7qaYCgEVS79i+2okiobAqLA79qTo17mWYykhC8Jmn6/fnZ/NXrIUmdH+uHSHESvkOnW7CmhiXkcHlZ9FqfBS72wraShk8uD/mzxhaCrLMNHfdakbesTLNZmBof/VL3nwnkBfLmYQ+3GdZJcZfqiGtnNZLvb4b1FPMwtzE2yQnElkfWENqp3sVg9PaP6EDKp1bz3RZzT/P1rxpfcF0JJMiZTHtPCn0ESno7m70KGGCPbLNyn5LMO7ewtuEhV6+bevXTEWjZ4Pc4jDnDFcfp+uLxTcgRkHBb57EYPQLmeKWvHG+9DU1XFVtg8b0HyP3SQXUzrVtYV2BQEnxnxcFsrAlLQijkyZQRZCYTLJCpzVjGEnbDAFXFVHLoxp0YU0amEeyGbvoO61N9eWncl1eEolJYBPjIf26PBh9X8tsJ39LiNzgM2EPp1eZ3BmU3gnxcOFrQwNQnE4DF1LkGNBW3/yrTCCRfmkV8vIqEl/gHU0FLnVshyjw5058SoYkS7nZggQ5ITRPBcPzokXNOVnCYyHqfnw9lNAAA== 1x, data:image/webp;base64,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 2x">
+                      <source width="68" height="68" type="image/webp"
+                        srcset="data:image/webp;base64,UklGRnYEAABXRUJQVlA4IGoEAABwFACdASpEAEQAPm0ukkYkIqGhK5VeeIANiWMAwvCSiEnnbepXa0sjuOwX8Q/A2XkwW0tePf0V9CGoT5UiIAEo1E9mwecRbMDcpFpg2Y6AytHrQTsX3rGW7wJpmxKNBO3iPqcUDax3QvL1k6HRXeBfOIfXXVpFSFQr3Kx9YjRfR8nT1kzFi84Y6BISvtZrSwqAtqdWSja5Ka4xSyOjGBDT7FeSpbJ2XDEb8rAAAP7/Eh22wRA/aiApCwMO9R347CBannVrnr4IFbm84/7tGLbirtKbd6cfP6rFLkS18lX8bHJQClZgPelmnffbIeV1yoeJCHugNpbYUZj09U0mrahNmzLFBUqeCoSdHsLkmrqpZW/qCJn7qbDTaYf3iPa80fxZbFdpLErIaYDLHxBnakJg6k2BwzREYgqwIjbECdbzSTt5ScItEMz5flM2F+9RP8v4RDvwJnH1So5YWpegaSYZmXtkQ50W+Sla6nOLRuEzQSuUgb1UCmcGU712x87E6AdXfUPxLbHKt/zJw14oD+NxhhkcHFLSeGLTImrJMr5NHq5KT2sSF7NDA3xv+jfTDoWdKud09mARYPug/NcihyUcv8EBGOgGgJmEQR1n8WJqiGi/OuMb9dCkjTkjtdxyYB+CXrlaKE2CS6zCY5gt/0HDqxZ5Jf+waG6534Cqo8akCUQt0MBTrERYcHvaR7kEYhoUE1hfbLDhgmrUq1S+cPYheLef3pmWed0slRBXyEN8B3p+f2SM2wQlP2bDJQpfa5d+OsLRAn6i5BGm0JvjX/JU/GeheBJ2pS4XN6B7oVRn0vDNabSUsZ1Y58Ajw7/owjlyhB4tU22sOD8xBH1rj9FSeVFMKb3gKcO5fs7mOUR9oYnadynUoAdIxrIitcgqglY+LOpXje9xioxes7D0eWxg1faZVkYBq83+kZ0R8doHqnp6zIHfjQE2xWqWyu5IVPtQk3bSUCPB6xNRLkk7qkh2opsfQ94WJ9dlTNZc3hZNc1s0ll99iC3RVpAbXl/ImpFhwrJTQU3jwAlVMew7nmmyFn6G7ei2N4uwwqNIpFZ+OyjSiLMbaPcJuysyLg8xGbZ7VKEbaSrpCtooqJQ7WOHTj763U3+fRveeMiVLU83iIIH4adVxzyjNm2RF8pU9ZYGpUvgu2HaR50j4LzkfRKVBZ80f3rJf72zBEYBwVNGX5z5to59NO1xb2jTM3BioTagayZJQjG2ICzDgmPmmKlqGZ8WJuXxxYPCT0iEDNGNJ/v0XF5Anz0S7jPTzI4GBHMb/Wrb3WlP8XyMY9PmxjM/1MDRni6tnUD/+ycXeDuRKuAWgtlRZT0DVkTi6ipMSpJKzBcE0yaTGQudg4oLu6HuET42fKJWrwCY3Y8L4ABbkvUvyc0+hMAbC76ta4epLxw+tdxBbxVyiTDrE+Y/+RNTGri8AlVGst14DxtlHZvC1UL0gXt/quWHsNaPrflrVtWI7hHk7ongypQoDiuCPxIf4IW4kQgAAAAAAAA== 1x, data:image/webp;base64,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 2x">
+                      <source media="(min-width: 768px)" width="80" height="80" type="image/jpeg"
+                        srcset="data:image/jpeg;base64,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 1x, ./assets/reviews-img@2x-H_W75697.jpg 2x">
+                      <img src="data:image/jpeg;base64,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" srcset="./assets/reviews-img-mobile@2x-CWKhZ7mQ.jpg 2x" width="68"
+                        height="68" alt="Автор отзыва">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="reviews__button reviews__button--next" type="button" data-id="reviews-next">
+              <span class="visually-hidden">Показать следущий отзыв</span>
+            </button>
           </div>
         </div>
-        <div class="reviews__item review">
-          <h3>Анна Орлова</h3>
-          <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют,
-            персонал
-            дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
-          <div class="review__picture">
-            <picture>
-              <source media="(min-width: 768px)" width="80" height="80" type="image/webp"
-                srcset="data:image/webp;base64,UklGRpYFAABXRUJQVlA4IIoFAAAQGQCdASpQAFAAPm0wk0YkIyGhK5jrgIANiWMAwctKl4rbJ8s38NDcG3cLII34PpWffp/BE+PFnN11FyC9AD8++ijoG+nfYM6UH7d+wB+uTJx83dA5JbfI2aaImFs2AzE3AM9o2DBBz3rBj+HX860JFc5sDv5W0KOW8T4OzMB8zN3wCVXKdnatRaUpaheFbGacc/KpEWNtLBe54sDASAuu4f8AHjWFmW94eB1TssAABzcPPsJ0QLOFJkE1sxaYY3Us0GxN0SG7oW5xpI8KZjwgAAD+/73G7ifhsZfVQHbVPajGu+5SQL+yVPaM5wnHf/9cJwnPcsKKl7miIr58MdaIU/t/hrjVgv3Pb2LymKzvpeZTcrNqqzGLpzhm+V5MaLiF3ooCmUXhKqAM/PcJyO+QNXROJL9cqLLbCA2CTsLqjMUgMN1YR9KHPUj5JDL1Z0X3fCCnZq6+tjVPi6YJ88ajhZjk6nrQ7s6egtwf/o1DH4FvDPlLhpTmkigswQHnpxPX7g3XMfaSAu4KQm5gXtmrn+A3AtuETgguaQBwfW7Gun2SAaO0xVqA2OgZnmYgNRTvsBYom/rQDl+JynjZpQEAGAA25ikcnLKEtWFkpene8jwfImY6kR8ETLLiM8uSSocJPnzA6WbCULFyupFyLkfeN7G3t//m2Z83KAnKaq9z/3IaHmLeAlz4QzL9SjzMq9GxXO+baqmhPNluhC+geWrwpX699Gxc6Pn7TkX0NWsqeJcOTpaJo+MaGL6l8xZ6iLYQ/E11aB6ewj4FM+4yFQoEB0Z6UfkAoqyEIKSmXDvwv29slrG92yPQ5dJXP8p03QR7jMwXkaVcZnRhmT/Jjtg5eUbinx8zmBygfoN3grRaQEJbZB7fSbev+L23YD4X+c7+1vJ/636F6QRNfCyc9jxMGrf+EMiKTh6k1FVDnPOqnpxHKiz0SZ7NE/UUglzML5CHsYDNl0Upnai0PhEPeIvOBu736e1vhKCEqmJ0XIEAMswifFOhuoCcqq5m955nrL94gFQXIhu/nEiHU3soOPngALVdJnds6Wnf1a4oI6aqJpuTpVxmDctzMhuEaaKly3hqzrElXt9/Ee2Im3LmJKZJX2fAdB5mWnJzBgXpnU91DoxPZO7tBiJ35DTf/KsfwB6g+SkoT+YzanKRcSrD9g4/ZTmJmUF1eK1thEQ9iF8edwm2Z93qEd34BvV0KaQx8Hsj1HzqSn1r5s+ums7O7jLsQXiau7T3a4l4F1iNgB0lbEAiW2qoLXcf2dXXjzdO72ZrdYWJpevhlZMJJ4+Cn9DPVuiuZHvc3EK+1E9DB1ASQUDjAVyXhH2KlrB+VXb4akTpUKGj7qaYCgEVS79i+2okiobAqLA79qTo17mWYykhC8Jmn6/fnZ/NXrIUmdH+uHSHESvkOnW7CmhiXkcHlZ9FqfBS72wraShk8uD/mzxhaCrLMNHfdakbesTLNZmBof/VL3nwnkBfLmYQ+3GdZJcZfqiGtnNZLvb4b1FPMwtzE2yQnElkfWENqp3sVg9PaP6EDKp1bz3RZzT/P1rxpfcF0JJMiZTHtPCn0ESno7m70KGGCPbLNyn5LMO7ewtuEhV6+bevXTEWjZ4Pc4jDnDFcfp+uLxTcgRkHBb57EYPQLmeKWvHG+9DU1XFVtg8b0HyP3SQXUzrVtYV2BQEnxnxcFsrAlLQijkyZQRZCYTLJCpzVjGEnbDAFXFVHLoxp0YU0amEeyGbvoO61N9eWncl1eEolJYBPjIf26PBh9X8tsJ39LiNzgM2EPp1eZ3BmU3gnxcOFrQwNQnE4DF1LkGNBW3/yrTCCRfmkV8vIqEl/gHU0FLnVshyjw5058SoYkS7nZggQ5ITRPBcPzokXNOVnCYyHqfnw9lNAAA== 1x, data:image/webp;base64,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 2x">
-              <source width="68" height="68" type="image/webp"
-                srcset="data:image/webp;base64,UklGRnYEAABXRUJQVlA4IGoEAABwFACdASpEAEQAPm0ukkYkIqGhK5VeeIANiWMAwvCSiEnnbepXa0sjuOwX8Q/A2XkwW0tePf0V9CGoT5UiIAEo1E9mwecRbMDcpFpg2Y6AytHrQTsX3rGW7wJpmxKNBO3iPqcUDax3QvL1k6HRXeBfOIfXXVpFSFQr3Kx9YjRfR8nT1kzFi84Y6BISvtZrSwqAtqdWSja5Ka4xSyOjGBDT7FeSpbJ2XDEb8rAAAP7/Eh22wRA/aiApCwMO9R347CBannVrnr4IFbm84/7tGLbirtKbd6cfP6rFLkS18lX8bHJQClZgPelmnffbIeV1yoeJCHugNpbYUZj09U0mrahNmzLFBUqeCoSdHsLkmrqpZW/qCJn7qbDTaYf3iPa80fxZbFdpLErIaYDLHxBnakJg6k2BwzREYgqwIjbECdbzSTt5ScItEMz5flM2F+9RP8v4RDvwJnH1So5YWpegaSYZmXtkQ50W+Sla6nOLRuEzQSuUgb1UCmcGU712x87E6AdXfUPxLbHKt/zJw14oD+NxhhkcHFLSeGLTImrJMr5NHq5KT2sSF7NDA3xv+jfTDoWdKud09mARYPug/NcihyUcv8EBGOgGgJmEQR1n8WJqiGi/OuMb9dCkjTkjtdxyYB+CXrlaKE2CS6zCY5gt/0HDqxZ5Jf+waG6534Cqo8akCUQt0MBTrERYcHvaR7kEYhoUE1hfbLDhgmrUq1S+cPYheLef3pmWed0slRBXyEN8B3p+f2SM2wQlP2bDJQpfa5d+OsLRAn6i5BGm0JvjX/JU/GeheBJ2pS4XN6B7oVRn0vDNabSUsZ1Y58Ajw7/owjlyhB4tU22sOD8xBH1rj9FSeVFMKb3gKcO5fs7mOUR9oYnadynUoAdIxrIitcgqglY+LOpXje9xioxes7D0eWxg1faZVkYBq83+kZ0R8doHqnp6zIHfjQE2xWqWyu5IVPtQk3bSUCPB6xNRLkk7qkh2opsfQ94WJ9dlTNZc3hZNc1s0ll99iC3RVpAbXl/ImpFhwrJTQU3jwAlVMew7nmmyFn6G7ei2N4uwwqNIpFZ+OyjSiLMbaPcJuysyLg8xGbZ7VKEbaSrpCtooqJQ7WOHTj763U3+fRveeMiVLU83iIIH4adVxzyjNm2RF8pU9ZYGpUvgu2HaR50j4LzkfRKVBZ80f3rJf72zBEYBwVNGX5z5to59NO1xb2jTM3BioTagayZJQjG2ICzDgmPmmKlqGZ8WJuXxxYPCT0iEDNGNJ/v0XF5Anz0S7jPTzI4GBHMb/Wrb3WlP8XyMY9PmxjM/1MDRni6tnUD/+ycXeDuRKuAWgtlRZT0DVkTi6ipMSpJKzBcE0yaTGQudg4oLu6HuET42fKJWrwCY3Y8L4ABbkvUvyc0+hMAbC76ta4epLxw+tdxBbxVyiTDrE+Y/+RNTGri8AlVGst14DxtlHZvC1UL0gXt/quWHsNaPrflrVtWI7hHk7ongypQoDiuCPxIf4IW4kQgAAAAAAAA== 1x, data:image/webp;base64,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 2x">
-              <source media="(min-width: 768px)" width="80" height="80" type="image/jpeg"
-                srcset="data:image/jpeg;base64,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 1x, ./assets/reviews-img@2x-H_W75697.jpg 2x">
-              <img src="data:image/jpeg;base64,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" srcset="./assets/reviews-img-mobile@2x-CWKhZ7mQ.jpg 2x" width="68" height="68"
-                alt="Автор отзыва">
-            </picture>
-          </div>
-        </div>
-        <button class="review__button review__button--next" type="button">
-          <span class="visually-hidden">Показать следущий отзыв</span>
-        </button>
       </section>
       <section class="main__form-wrapper" data-test="form">
-        <h2 class="main__form-title">Бесплатное занятие</h2>
-        <form class="main__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="form__name" for="name">
-            <input class="form__name-input" type="text" name="name-input" id="name" pattern="/^[Aa-ZzАа-ЯяЁё\s]+$/iu"
-              placeholder="Имя" required>
-          </label>
-          <label class="form__tel" for="tel">
-            <input class="form__tel-input" type="text" name="tel-input" id="tel" pattern="^[0-9]+$"
-              placeholder="Телефон" required>
-          </label>
-          <button class="form__button" type="submit">Отправить</button>
-        </form>
-        <div class="main__contacts contacts">
-          <h3 class="contacts__title">Контакты</h3>
+        <div class="main__form-container">
+          <h2 class="main__form-title second-title">Бесплатное занятие</h2>
+          <form class="main__form form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form__name">
+              <span class="visually-hidden">Ваше имя</span>
+              <input class="form__name-input" type="text" name="name-input" placeholder="Имя"
+                pattern="[A-Za-zA-Яа-яЁё\s]+" required>
+            </label>
+            <label class="form__tel">
+              <span class="visually-hidden">Ваш телефон</span>
+              <input class="form__tel-input" type="text" name="tel-input" placeholder="Телефон" pattern="^[0-9]+$"
+                required>
+            </label>
+            <button class="form__button" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="main__contacts contacts wrapper">
+          <h3 class="contacts__title second-title">Контакты</h3>
           <div class="contacts__wrapper">
-            <div class="contacts__address">
+            <div class="contacts__info-wrapper contacts__info-wrapper--address">
               <h4 class="contacts__subtitle">Адрес:</h4>
-              <address class="contacts__address-info">г. Омск, ул. 60 лет Октября, 7</address>
+              <address class="contacts__info contacts__info--address">г. Омск, ул. 60 лет Октября, 7</address>
             </div>
-            <div class="contacts__chart">
+            <div class="contacts__info-wrapper contacts__info-wrapper--schedule">
               <h4 class="contacts__subtitle">График работы:</h4>
-              <time class="contacts__chart-info" itemprop="openingHours"
-                datetime="ПН, ВТ, СР, ЧТ, ПТ, СБ, ВС 8:00-22:00">Пн-Вс: с 8:00 до 22:00</time>
+              <p class="contacts__info contacts__info--schedule">Пн-Вс: с 8:00 до 22:00</p>
             </div>
-            <div class="contacts__phone">
+            <div class="contacts__info-wrapper contacts__info-wrapper--phone">
               <h4 class="contacts__subtitle">Телефон:</h4>
-              <a class="contacts__phone-info" href="tel:+78005555555">8 800 555-55-55</a>
+              <a class="contacts__info contacts__info--phone" href="tel:+78005555555">8 800 555-55-55</a>
             </div>
-            <div class="contacts__email">
+            <div class="contacts__info-wrapper contacts__info-wrapper--email">
               <h4 class="contacts__subtitle">Email:</h4>
-              <a class="contacts__email-info" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              <a class="contacts__info contacts__info--email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <div data-test="footer">footer</div>
-  </div>
+    <footer class="body__footer footer" data-test="footer">
+      <div class="footer__wrapper wrapper">
+        <img src="./assets/logo-fsUHN7Ex.svg" width="100" height="20" alt="Логотип сайта SUPERGYM">
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Абонементы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Акции</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Тренеры</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Расписание</a>
+            </li>
+          </ul>
+          <ul class="nav__social-list social">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy?ysclid=m8slvzsnue649094729">
+                <span class="visually-hidden">VKontakte</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="https://ok.ru/htmlacademy/topic/151497327248648">
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--rd"
+                href="https://www.reddit.com/search/?q=html&cId=68f6f428-8046-4707-aa21-b3910aa12dc1&iId=e66c63a8-0b32-4e8a-80cb-b9fd69c7f6aa">
+                <span class="visually-hidden">Reddit</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
